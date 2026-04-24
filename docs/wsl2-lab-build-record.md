@@ -80,6 +80,7 @@ SIPp UAC RTP -> RTPEngine (10.10.10.10, ports 40000-40100) -> SIPp UAS RTP
 - Dispatcher failover from Vapi A (returning 503) to Vapi B (returning 200 OK)
 - RTPEngine SDP rewrite — `c=` and `m=` lines rewritten to SBC address/ports
 - RTPEngine cleanup on CANCEL, BYE, and failover paths
+- Caller-side CANCEL handling — CANCEL receives `200 canceling`, then the INVITE receives final `487 Request Terminated`
 
 ### What the lab does not prove
 
@@ -203,7 +204,7 @@ This runs all seven tests in sequence and generates tshark evidence for each.
 | [lab/run/run_single_call_test.sh](../lab/run/run_single_call_test.sh) | Generic runner | Accepts test name, Vapi scenario, and carrier scenario as arguments. Starts Kamailio, two Vapi UAS instances, tcpdump, sends the carrier call, collects artifacts. |
 | [lab/run/run_failover_test.sh](../lab/run/run_failover_test.sh) | `test-failover` | Vapi A returns 503, Vapi B returns 200 OK. Proves dispatcher failover retries the second destination. |
 | [lab/run/run_sdp_test.sh](../lab/run/run_sdp_test.sh) | `test05-sdp` | Starts RTPEngine in userspace mode alongside Kamailio. Proves SDP `c=` and `m=` lines are rewritten to the SBC address and port range. |
-| [lab/run/run_cancel_test.sh](../lab/run/run_cancel_test.sh) | `test06-cancel` | Temporarily rewrites dispatcher to a single upstream peer using `vapi-delayed-cancel.xml`. Proves upstream CANCEL propagation and RTPEngine cleanup. Restores dispatcher on exit. |
+| [lab/run/run_cancel_test.sh](../lab/run/run_cancel_test.sh) | `test06-cancel` | Temporarily rewrites dispatcher to a single upstream peer using `vapi-delayed-cancel.xml`. Proves upstream CANCEL propagation, caller-side final `487`, and RTPEngine cleanup. Restores dispatcher on exit. |
 | [lab/run/run_untrusted_test.sh](../lab/run/run_untrusted_test.sh) | `test03-untrusted` | Sends INVITE from `10.10.10.99` (not in trusted list). Proves source-IP rejection returns `403 Forbidden`. |
 | [lab/run/run_pike_test.sh](../lab/run/run_pike_test.sh) | `test04-pike` | Sends 100 calls at 50 calls/second from the trusted source. Proves Pike blocks the flood with `503 Rate Limit Exceeded`. |
 | [lab/run/revalidate_with_tshark.sh](../lab/run/revalidate_with_tshark.sh) | All tests | Runs all seven tests in sequence. After each test, calls `write_tshark_views.sh` to generate tshark evidence. Use this as the single revalidation entry point. |
@@ -231,40 +232,33 @@ sufficient for this lab and required for WSL2 where kernel module loading is not
 
 The lab is considered valid when all of the following are demonstrated with artifacts:
 
-- [ ] Kamailio config syntax validates with `kamailio -c -f`
-- [ ] test01-pai: ANI extracted from `P-Asserted-Identity` and forwarded in custom headers
-- [ ] test02-from-only: ANI fallback from `From` works when PAI is absent
-- [ ] test03-untrusted: untrusted source receives `403 Forbidden`
-- [ ] test04-pike: flood traffic produces `503 Rate Limit Exceeded` blocks
-- [ ] test-failover: dispatcher retries Vapi B after Vapi A returns 503
-- [ ] test05-sdp: SDP `c=` and `m=` lines rewritten to SBC address in both directions
-- [ ] test06-cancel: upstream receives CANCEL and RTPEngine session is cleaned up
+- [x] Kamailio config syntax validates with `kamailio -c -f`
+- [x] test01-pai: ANI extracted from `P-Asserted-Identity` and forwarded in custom headers
+- [x] test02-from-only: ANI fallback from `From` works when PAI is absent
+- [x] test03-untrusted: untrusted source receives `403 Forbidden`
+- [x] test04-pike: flood traffic produces `503 Rate Limit Exceeded` blocks
+- [x] test-failover: dispatcher retries Vapi B after Vapi A returns 503
+- [x] test05-sdp: SDP `c=` and `m=` lines rewritten to SBC address in both directions
+- [x] test06-cancel: upstream receives CANCEL, caller receives final `487 Request Terminated`, and RTPEngine session is cleaned up
 
-## Known Issue: CANCEL Caller-Leg Final Response
+## CANCEL Validation Detail
 
 The CANCEL test currently shows:
 
 ```text
-caller leg:  408 Request Timeout
-upstream:    CANCEL -> 200 OK, then 487 Request Terminated
+caller CANCEL
+upstream CANCEL
+caller leg: 200 canceling for CANCEL
+upstream:   200 OK for CANCEL, then 487 Request Terminated
+caller leg: 487 Request Terminated for INVITE
 ```
 
-Upstream teardown and RTPEngine cleanup are proven. The caller-leg final response is not
-correct for production.
-
-Investigation starting points:
-
-- `tm` module `fr_timer` and `fr_inv_timer` values — the lab uses intentionally short timers
-  that may cause local timeout before the upstream `487` returns
-- whether `failure_route` exits early on `t_is_canceled()` before the response is relayed
-- ordering of CANCEL handling versus the transaction state at the time CANCEL arrives
-
-This must be resolved and revalidated before production deployment. Do not claim the root cause
-is known until a fix is implemented and the test shows `487` on the caller leg.
+The carrier SIPp scenario uses the same Via branch for INVITE, CANCEL, and the non-2xx ACK.
+This is required so Kamailio can match the CANCEL to the original INVITE transaction.
 
 ## Implementation Status
 
-All success criteria above are currently met except the CANCEL caller-leg response item.
+All success criteria above are currently met.
 
 Tshark-backed revalidation has been completed for all tests. Each evidence folder contains
 fresh tshark summaries and packet-level proof files generated by `revalidate_with_tshark.sh`.

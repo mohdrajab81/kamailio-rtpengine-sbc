@@ -3,7 +3,7 @@
   <send retrans="500">
     <![CDATA[
 INVITE sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch]
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=z9hG4bK-cancel-[pid]-[call_number]
 From: <sip:0555123456@etisalat.local>;tag=[call_number]
 To: <sip:800@lab.local>
 Call-ID: [call_id]
@@ -31,7 +31,7 @@ a=rtpmap:0 PCMU/8000
   <send>
     <![CDATA[
 CANCEL sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch]
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=z9hG4bK-cancel-[pid]-[call_number]
 From: <sip:0555123456@etisalat.local>;tag=[call_number]
 To: <sip:800@lab.local>
 Call-ID: [call_id]
@@ -42,14 +42,14 @@ Content-Length: 0
     ]]>
   </send>
 
-  <recv response="408" optional="true" next="ack_non2xx"/>
+  <recv response="200" crlf="true"/>
   <recv response="487" next="ack_non2xx"/>
 
   <label id="ack_non2xx"/>
   <send>
     <![CDATA[
 ACK sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch]
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=z9hG4bK-cancel-[pid]-[call_number]
 [last_From:]
 [last_To:]
 [last_Call-ID:]

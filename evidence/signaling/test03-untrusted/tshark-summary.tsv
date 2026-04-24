@@ -1,4 +1,4 @@
 frame.number	frame.time_relative	ip.src	udp.srcport	ip.dst	udp.dstport	_ws.col.info
 "1"	"0.000000000"	"10.10.10.99"	"5063"	"10.10.10.10"	"5060"	"Request: INVITE sip:800@lab.local | "
-"2"	"0.000474000"	"10.10.10.10"	"5060"	"10.10.10.99"	"5063"	"Status: 403 Forbidden | "
-"3"	"0.000572000"	"10.10.10.99"	"5063"	"10.10.10.10"	"5060"	"Request: ACK sip:800@lab.local | "
+"2"	"0.000471000"	"10.10.10.10"	"5060"	"10.10.10.99"	"5063"	"Status: 403 Forbidden | "
+"3"	"0.000583000"	"10.10.10.99"	"5063"	"10.10.10.10"	"5060"	"Request: ACK sip:800@lab.local | "

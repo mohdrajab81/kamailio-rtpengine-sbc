@@ -2,9 +2,7 @@
 
 ## Document Status
 
-This is the canonical solution design for the Etisalat -> Kamailio/RTPEngine -> Vapi SBC architecture.
-
-It replaces the previous high-level design and the earlier research-report style draft. It keeps the useful architecture, production-readiness, and validation content, but removes duplicated appendix material, raw research citation markers, and snippets that looked more production-proven than they are.
+This document defines the Etisalat -> Kamailio/RTPEngine -> Vapi SBC architecture, production configuration approach, operational requirements, and lab validation baseline.
 
 Current local source of truth:
 
@@ -20,8 +18,6 @@ The recommended production architecture is a public-facing SBC layer in AWS, usi
 The local WSL2 lab validated the core SIP behavior: ANI extraction from `P-Asserted-Identity` with fallback to `From`, custom ANI header injection, optional `From` rewrite, source-IP trust enforcement, Pike rate limiting, dispatcher-based upstream failover, RTPEngine SDP rewrite, and RTPEngine cleanup on teardown/failover paths.
 
 The lab does not prove live Etisalat behavior, live Vapi credential acceptance, AWS public/private address handling, TLS, or final production timer behavior. Those remain deployment-readiness items.
-
-The main known issue is the current CANCEL result in the lab: upstream `CANCEL` propagation and RTPEngine cleanup are proven, but the caller leg currently receives `408 Request Timeout` rather than a relayed `487 Request Terminated`. This should be investigated and revalidated before production.
 
 ## Goals
 
@@ -179,7 +175,7 @@ New calls can recover after failover. In-progress calls on the failed node shoul
 | Dispatcher failover | Failed Vapi A path retries Vapi B and succeeds. |
 | SDP anchoring | SDP `c=` and media ports rewritten through RTPEngine. |
 | BYE/CANCEL cleanup path | RTPEngine cleanup visible in logs. |
-| Upstream CANCEL propagation | Upstream receives CANCEL, returns `200 OK` to CANCEL, then `487 Request Terminated`. |
+| CANCEL transaction handling | Caller receives `200 canceling` for CANCEL, upstream receives CANCEL, upstream returns `200 OK` to CANCEL and `487 Request Terminated`, and caller receives final `487 Request Terminated`. |
 
 ### Lab Boundaries
 
@@ -193,27 +189,20 @@ The lab did not prove:
 - TLS signaling
 - production dispatcher health probing
 - production timer values
-- final caller-leg CANCEL response behavior
 
-### Known Lab Issue: CANCEL Final Response
+### CANCEL Validation Detail
 
-The isolated CANCEL test currently shows:
+The isolated CANCEL test now shows the expected transaction flow:
 
 ```text
-caller leg: 408 Request Timeout
-upstream:   CANCEL -> 200 OK, then 487 Request Terminated
+caller CANCEL
+upstream CANCEL
+caller leg: 200 canceling for CANCEL
+upstream:   200 OK for CANCEL, then 487 Request Terminated
+caller leg: 487 Request Terminated for INVITE
 ```
 
-This means upstream teardown and RTPEngine cleanup are proven, but caller-leg final response behavior is not release-ready.
-
-Investigation should start with:
-
-- `tm` timer values, especially `fr_timer` and `fr_inv_timer`
-- whether `failure_route` exits early on `t_is_canceled()`
-- ordering of CANCEL handling versus transaction state
-- whether the caller-side branch receives the intended final response before local timeout
-
-Do not claim the root cause is proven until the fix is implemented and revalidated.
+The lab SIPp scenario uses the same Via branch for the INVITE, CANCEL, and non-2xx ACK so Kamailio can match the CANCEL to the original INVITE transaction. Kamailio deletes RTPEngine state only after `t_check_trans()` confirms the transaction exists.
 
 ## Production Deployment Inputs
 
@@ -325,7 +314,7 @@ modparam("tm", "fr_timer", 10000)
 modparam("tm", "fr_inv_timer", 120000)
 ```
 
-These timers are also part of the CANCEL `408` vs `487` investigation. The lab values are much shorter than production values and should be treated as test accelerators only.
+The lab values are much shorter than production values and should be treated as test accelerators only.
 
 ### Dispatcher
 
@@ -465,7 +454,7 @@ if (is_method("CANCEL")) {
 }
 ```
 
-This still needs revalidation because the current lab shows the caller-leg `408` issue.
+This pattern is validated by the current CANCEL test.
 
 ### RTPEngine
 
@@ -611,7 +600,6 @@ These items must be closed before release:
 | Public/private AWS address handling | Open. Not modeled in WSL2 lab. |
 | Dispatcher health checks | Candidate only. Lab disables probing. |
 | Production SIP timers | Open. Lab timers are not production values. |
-| CANCEL caller-leg final response | Open. Current lab shows `408` instead of relayed `487`. |
 | TLS | Open. Not configured in lab. |
 | Instance type/capacity | Open. Recheck AWS region availability and quota at deployment. |
 

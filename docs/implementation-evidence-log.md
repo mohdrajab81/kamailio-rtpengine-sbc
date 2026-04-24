@@ -71,7 +71,7 @@ Conclusion:
 
 Objective:
 
-- verify which package names are valid on Ubuntu 24.04 before using the earlier lab plan
+- verify which package names are valid on Ubuntu 24.04 before installation
 
 Commands:
 
@@ -564,18 +564,19 @@ wsl.exe -d Ubuntu -- bash -lc "~/sip-lab/run/run_cancel_test.sh"
 Key output:
 
 ```text
-CANCEL received, deleting RTPEngine
+CANCEL matched transaction, deleting RTPEngine
 rtpengine ... offer
 rtpengine ... delete
-10.10.10.10:5060 -> 10.10.10.20:5062 SIP/2.0 408 Request Timeout
 10.10.10.10:5060 -> 10.10.10.41:5070 CANCEL sip:+97145550123@localcred.sip.vapi.ai
+10.10.10.10:5060 -> 10.10.10.20:5062 SIP/2.0 200 canceling
 10.10.10.41:5070 -> 10.10.10.10:5060 SIP/2.0 200 OK
 10.10.10.41:5070 -> 10.10.10.10:5060 SIP/2.0 487 Request Terminated
+10.10.10.10:5060 -> 10.10.10.20:5062 SIP/2.0 487 Request Terminated
 ```
 
 Result:
 
-- success for cleanup-path verification
+- success
 
 Artifact path:
 
@@ -588,8 +589,9 @@ Conclusion:
 
 - RTPEngine delete behavior is evidenced and the cleanup hook is firing
 - the trace is now isolated to a single upstream peer and is repeatable
-- the current Kamailio flow returns `408 Request Timeout` on the caller leg after CANCEL, then completes upstream CANCEL/`487` handling
-- this is acceptable for lab cleanup proof, but the final cancel response behavior should be reviewed before treating it as production-ready signaling logic
+- the caller-side CANCEL transaction receives `200 canceling`
+- the original INVITE transaction receives final `487 Request Terminated`
+- the carrier SIPp scenario uses one Via branch across INVITE, CANCEL, and non-2xx ACK so the CANCEL matches the original INVITE transaction
 
 ## Entry 015: Tshark installation and Wireshark-style pcap verification
 
@@ -675,10 +677,11 @@ forwarded c=IN IP4 10.10.10.10 / m=audio 40036 / a=rtcp:40037
 
 Cancel tshark summary:
 caller CANCEL
-caller-leg 408 Request Timeout
 upstream CANCEL
+caller-leg 200 canceling for CANCEL
 upstream 200 OK
 upstream 487 Request Terminated
+caller-leg 487 Request Terminated
 ```
 
 Result:
@@ -699,4 +702,4 @@ Conclusion:
 
 - the active lab results are now backed by fresh `tshark` artifacts rather than only SIPp traces and application logs
 - the two intentional negative-path tests remain correct: `test03-untrusted` returns non-zero because the caller is rejected with `403`, and `test04-pike` returns non-zero because flood traffic is intentionally blocked with `503`
-- header rewrite, trust-boundary enforcement, dispatcher failover, SDP anchoring, and cancel cleanup all have packet-level proof in the current evidence set
+- header rewrite, trust-boundary enforcement, dispatcher failover, SDP anchoring, CANCEL final-response handling, and cancel cleanup all have packet-level proof in the current evidence set

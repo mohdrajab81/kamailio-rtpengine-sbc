@@ -80,6 +80,7 @@ restore_dispatcher
 trap - EXIT
 rm -f "$DISPATCHER_BACKUP"
 
+touch carrier_errors.log vapi-a_errors.log
 cp -a "$TEST_DIR"/. "$ART_DIR"/
 
 printf 'test_name=%s\n' "$TEST_NAME"

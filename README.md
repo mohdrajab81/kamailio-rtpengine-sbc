@@ -8,7 +8,7 @@ with documentation, lab sources, and packet-level evidence artifacts.
 | File | Purpose |
 | --- | --- |
 | [docs/etisalat-vapi-sbc-solution-design.md](docs/etisalat-vapi-sbc-solution-design.md) | Production architecture, design decisions, candidate configs, security model, and lab validation summary. |
-| [docs/wsl2-lab-build-record.md](docs/wsl2-lab-build-record.md) | Lab build record and rebuild guide — environment, topology, file map, test suite, and known issues. |
+| [docs/wsl2-lab-build-record.md](docs/wsl2-lab-build-record.md) | Lab build record and rebuild guide — environment, topology, file map, test suite, and artifact map. |
 | [docs/implementation-evidence-log.md](docs/implementation-evidence-log.md) | Per-test execution record and packet-level evidence map. |
 
 ## Repository Layout
@@ -34,13 +34,7 @@ evidence/
 - Pike rate limiting — flood traffic produces `503 Rate Limit Exceeded`
 - Dispatcher failover from Vapi A (503) to Vapi B (200 OK)
 - RTPEngine SDP rewrite and media anchoring
-- Upstream `CANCEL` propagation and RTPEngine cleanup
-
-## Known Lab Issue
-
-The CANCEL test proves upstream teardown and RTPEngine cleanup, but the caller leg currently
-receives `408 Request Timeout` instead of a relayed `487 Request Terminated`. This must be
-resolved before production. See the solution design for investigation directions.
+- CANCEL handling: matched transaction, upstream `CANCEL`, caller-side `200 canceling`, final `487 Request Terminated`, and RTPEngine cleanup
 
 ## What Still Needs Production Confirmation
 
@@ -50,7 +44,6 @@ resolved before production. See the solution design for investigation directions
 - AWS public/private address handling with Elastic IP
 - Production SIP timer values and dispatcher health-check settings
 - Canonical custom ANI header name confirmed by Vapi
-- Caller-leg CANCEL final-response behavior
 
 ## How To Run The Lab
 

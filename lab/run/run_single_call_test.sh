@@ -54,6 +54,7 @@ wait "$BPID" || true
 sudo pkill -f "kamailio -DD -E -f $LAB_ROOT/kamailio/kamailio-lab.cfg" >/dev/null 2>&1 || true
 sleep 1
 
+touch carrier_errors.log vapi-a_errors.log vapi-b_errors.log
 cp -a "$TEST_DIR"/. "$ART_DIR"/
 
 printf 'test_name=%s\n' "$TEST_NAME"

@@ -1,18 +1,14 @@
-[1777055354.883374] INFO: [crypto] Generating new DTLS certificate
-[1777055354.889525] INFO: [core] Startup complete, version 11.5.1.18-1ubuntu1.2
-[1777055354.890178] INFO: [http] Websocket listener thread running
-[1777055356.972758] INFO: [control] Received command 'ping' from 127.0.0.1:34830
-[1777055356.974780] INFO: [control] Replying to 'ping' from 127.0.0.1:34830 (elapsed time 0.000001 sec)
-[1777055356.974972] INFO: [1-837@10.10.10.20]: [control] Received command 'offer' from 127.0.0.1:34830
-[1777055356.975008] NOTICE: [1-837@10.10.10.20]: [core] Creating new call
-[1777055356.975135] INFO: [1-837@10.10.10.20]: [control] Replying to 'offer' from 127.0.0.1:34830 (elapsed time 0.000158 sec)
-[1777055356.977048] INFO: [1-837@10.10.10.20]: [control] Received command 'delete' from 127.0.0.1:34830
-[1777055356.977101] INFO: [1-837@10.10.10.20]: [core] Scheduling deletion of call branch '1' (via-branch '') in 30 seconds
-[1777055356.977103] INFO: [1-837@10.10.10.20]: [core] Scheduling deletion of call branch '' (via-branch '') in 30 seconds
-[1777055356.977104] INFO: [1-837@10.10.10.20]: [core] Scheduling deletion of entire call in 30 seconds
-[1777055356.977109] INFO: [1-837@10.10.10.20]: [control] Replying to 'delete' from 127.0.0.1:34830 (elapsed time 0.000050 sec)
-[1777055356.996081] INFO: [1-837@10.10.10.20]: [control] Received command 'delete' from 127.0.0.1:55370
-[1777055356.996117] INFO: [1-837@10.10.10.20]: [core] Scheduling deletion of call branch '1' (via-branch '') in 30 seconds
-[1777055356.996119] INFO: [1-837@10.10.10.20]: [core] Scheduling deletion of entire call in 30 seconds
-[1777055356.996123] INFO: [1-837@10.10.10.20]: [control] Replying to 'delete' from 127.0.0.1:55370 (elapsed time 0.000028 sec)
-[1777055359.022079] INFO: [core] Version 11.5.1.18-1ubuntu1.2 shutting down
+[1777056313.091834] INFO: [crypto] Generating new DTLS certificate
+[1777056313.098142] INFO: [core] Startup complete, version 11.5.1.18-1ubuntu1.2
+[1777056313.098681] INFO: [http] Websocket listener thread running
+[1777056315.180785] INFO: [control] Received command 'ping' from 127.0.0.1:34322
+[1777056315.180959] INFO: [control] Replying to 'ping' from 127.0.0.1:34322 (elapsed time 0.000001 sec)
+[1777056315.181150] INFO: [1-836@10.10.10.20]: [control] Received command 'offer' from 127.0.0.1:34322
+[1777056315.181176] NOTICE: [1-836@10.10.10.20]: [core] Creating new call
+[1777056315.181301] INFO: [1-836@10.10.10.20]: [control] Replying to 'offer' from 127.0.0.1:34322 (elapsed time 0.000146 sec)
+[1777056315.183402] INFO: [1-836@10.10.10.20]: [control] Received command 'delete' from 127.0.0.1:34322
+[1777056315.183446] INFO: [1-836@10.10.10.20]: [core] Scheduling deletion of call branch '1' (via-branch '') in 30 seconds
+[1777056315.183448] INFO: [1-836@10.10.10.20]: [core] Scheduling deletion of call branch '' (via-branch '') in 30 seconds
+[1777056315.183449] INFO: [1-836@10.10.10.20]: [core] Scheduling deletion of entire call in 30 seconds
+[1777056315.183454] INFO: [1-836@10.10.10.20]: [control] Replying to 'delete' from 127.0.0.1:34322 (elapsed time 0.000045 sec)
+[1777056317.215601] INFO: [core] Version 11.5.1.18-1ubuntu1.2 shutting down

@@ -1,11 +1,11 @@
-[1777055347.914973] INFO: [crypto] Generating new DTLS certificate
-[1777055347.929876] INFO: [core] Startup complete, version 11.5.1.18-1ubuntu1.2
-[1777055347.930590] INFO: [http] Websocket listener thread running
-[1777055349.912767] INFO: [control] Received command 'ping' from 127.0.0.1:53542
-[1777055349.912776] INFO: [control] Replying to 'ping' from 127.0.0.1:53542 (elapsed time 0.000000 sec)
-[1777055349.912851] INFO: [1-649@10.10.10.20]: [control] Received command 'offer' from 127.0.0.1:53542
-[1777055349.912910] NOTICE: [1-649@10.10.10.20]: [core] Creating new call
-[1777055349.913026] INFO: [1-649@10.10.10.20]: [control] Replying to 'offer' from 127.0.0.1:53542 (elapsed time 0.000172 sec)
-[1777055349.915973] INFO: [1-649@10.10.10.20]: [control] Received command 'answer' from 127.0.0.1:53542
-[1777055349.916028] INFO: [1-649@10.10.10.20]: [control] Replying to 'answer' from 127.0.0.1:53542 (elapsed time 0.000048 sec)
-[1777055353.445616] INFO: [core] Version 11.5.1.18-1ubuntu1.2 shutting down
+[1777056306.152079] INFO: [crypto] Generating new DTLS certificate
+[1777056306.167400] INFO: [core] Startup complete, version 11.5.1.18-1ubuntu1.2
+[1777056306.168126] INFO: [http] Websocket listener thread running
+[1777056308.148682] INFO: [control] Received command 'ping' from 127.0.0.1:52968
+[1777056308.148692] INFO: [control] Replying to 'ping' from 127.0.0.1:52968 (elapsed time 0.000000 sec)
+[1777056308.148871] INFO: [1-647@10.10.10.20]: [control] Received command 'offer' from 127.0.0.1:52968
+[1777056308.148940] NOTICE: [1-647@10.10.10.20]: [core] Creating new call
+[1777056308.149056] INFO: [1-647@10.10.10.20]: [control] Replying to 'offer' from 127.0.0.1:52968 (elapsed time 0.000180 sec)
+[1777056308.152030] INFO: [1-647@10.10.10.20]: [control] Received command 'answer' from 127.0.0.1:52968
+[1777056308.152081] INFO: [1-647@10.10.10.20]: [control] Replying to 'answer' from 127.0.0.1:52968 (elapsed time 0.000044 sec)
+[1777056311.683135] INFO: [core] Version 11.5.1.18-1ubuntu1.2 shutting down
