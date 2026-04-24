@@ -80,7 +80,7 @@ SIPp UAC RTP -> RTPEngine (10.10.10.10, ports 40000-40100) -> SIPp UAS RTP
 - Dispatcher failover from Vapi A (returning 503) to Vapi B (returning 200 OK)
 - RTPEngine SDP rewrite — `c=` and `m=` lines rewritten to SBC address/ports
 - RTPEngine cleanup on CANCEL, BYE, and failover paths
-- Caller-side CANCEL handling — CANCEL receives `200 canceling`, then the INVITE receives final `487 Request Terminated`
+- CANCEL teardown, including caller-side response, upstream propagation, final `487 Request Terminated`, and RTPEngine cleanup
 
 ### What the lab does not prove
 
@@ -240,21 +240,6 @@ The lab is considered valid when all of the following are demonstrated with arti
 - [x] test-failover: dispatcher retries Vapi B after Vapi A returns 503
 - [x] test05-sdp: SDP `c=` and `m=` lines rewritten to SBC address in both directions
 - [x] test06-cancel: upstream receives CANCEL, caller receives final `487 Request Terminated`, and RTPEngine session is cleaned up
-
-## CANCEL Validation Detail
-
-The CANCEL test currently shows:
-
-```text
-caller CANCEL
-upstream CANCEL
-caller leg: 200 canceling for CANCEL
-upstream:   200 OK for CANCEL, then 487 Request Terminated
-caller leg: 487 Request Terminated for INVITE
-```
-
-The carrier SIPp scenario uses the same Via branch for INVITE, CANCEL, and the non-2xx ACK.
-This is required so Kamailio can match the CANCEL to the original INVITE transaction.
 
 ## Implementation Status
 

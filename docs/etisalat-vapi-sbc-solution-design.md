@@ -175,7 +175,7 @@ New calls can recover after failover. In-progress calls on the failed node shoul
 | Dispatcher failover | Failed Vapi A path retries Vapi B and succeeds. |
 | SDP anchoring | SDP `c=` and media ports rewritten through RTPEngine. |
 | BYE/CANCEL cleanup path | RTPEngine cleanup visible in logs. |
-| CANCEL transaction handling | Caller receives `200 canceling` for CANCEL, upstream receives CANCEL, upstream returns `200 OK` to CANCEL and `487 Request Terminated`, and caller receives final `487 Request Terminated`. |
+| CANCEL teardown | Caller-side CANCEL response, upstream CANCEL propagation, final `487 Request Terminated`, and media cleanup are validated. |
 
 ### Lab Boundaries
 
@@ -189,20 +189,6 @@ The lab did not prove:
 - TLS signaling
 - production dispatcher health probing
 - production timer values
-
-### CANCEL Validation Detail
-
-The isolated CANCEL test now shows the expected transaction flow:
-
-```text
-caller CANCEL
-upstream CANCEL
-caller leg: 200 canceling for CANCEL
-upstream:   200 OK for CANCEL, then 487 Request Terminated
-caller leg: 487 Request Terminated for INVITE
-```
-
-The lab SIPp scenario uses the same Via branch for the INVITE, CANCEL, and non-2xx ACK so Kamailio can match the CANCEL to the original INVITE transaction. Kamailio deletes RTPEngine state only after `t_check_trans()` confirms the transaction exists.
 
 ## Production Deployment Inputs
 
