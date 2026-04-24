@@ -353,7 +353,7 @@ representative response: SIP/2.0 503 Rate Limit Exceeded
         styles,
         "Evidence 7 — CANCEL cleanup via RTPEngine delete",
         [
-            "The lab proves upstream CANCEL propagation and RTPEngine cleanup. It also captures a caller-leg <b>408 Request Timeout</b>, which remains a known production-hardening item rather than a closed issue.",
+            "The lab proves caller-side CANCEL response handling, upstream CANCEL propagation, final <b>487 Request Terminated</b> relay, and RTPEngine cleanup.",
         ],
     )
     add_code(
@@ -364,10 +364,11 @@ representative response: SIP/2.0 503 Rate Limit Exceeded
 10.10.10.10 -> 10.10.10.41   INVITE sip:+97145550123@localcred.sip.vapi.ai
 10.10.10.41 -> 10.10.10.10   SIP/2.0 180 Ringing
 10.10.10.20 -> 10.10.10.10   CANCEL sip:800@lab.local
-10.10.10.10 -> 10.10.10.20   SIP/2.0 408 Request Timeout
 10.10.10.10 -> 10.10.10.41   CANCEL sip:+97145550123@localcred.sip.vapi.ai
+10.10.10.10 -> 10.10.10.20   SIP/2.0 200 canceling (CANCEL)
 10.10.10.41 -> 10.10.10.10   SIP/2.0 200 OK (CANCEL)
 10.10.10.41 -> 10.10.10.10   SIP/2.0 487 Request Terminated
+10.10.10.10 -> 10.10.10.20   SIP/2.0 487 Request Terminated
 RTPEngine log: offer -> delete -> delete
         """,
     )
@@ -380,7 +381,6 @@ RTPEngine log: offer -> delete -> delete
         ["Timers and health checks", "Replace lab timers with WAN-appropriate values and enable dispatcher health monitoring."],
         ["Trust model", "Replace the single-IP lab gate with the real Etisalat source allowlist model."],
         ["Vapi validation", "Confirm the canonical ANI header name and live credential behavior against the real tenant."],
-        ["CANCEL behavior", "Correct and revalidate caller-leg final-response behavior before release."],
     ]
     prod_table = Table(prod, colWidths=[34 * mm, 138 * mm])
     prod_table.setStyle(
