@@ -1,12 +1,12 @@
 Frame 3: 613 bytes on wire (4904 bits), 613 bytes captured (4904 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 24, 2026 02:17:23.069748000 +03
-    UTC Arrival Time: Apr 23, 2026 23:17:23.069748000 UTC
-    Epoch Arrival Time: 1776986243.069748000
+    Arrival Time: Apr 24, 2026 21:29:03.388662000 +03
+    UTC Arrival Time: Apr 24, 2026 18:29:03.388662000 UTC
+    Epoch Arrival Time: 1777055343.388662000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.000081000 seconds]
+    [Time delta from previous captured frame: 0.000110000 seconds]
     [Time delta from previous displayed frame: 0.000000000 seconds]
-    [Time since reference or first frame: 0.000753000 seconds]
+    [Time since reference or first frame: 0.000801000 seconds]
     Frame Number: 3
     Frame Length: 613 bytes (4904 bits)
     Capture Length: 613 bytes (4904 bits)
@@ -30,7 +30,7 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.41
         0001 00.. = Differentiated Services Codepoint: Unknown (4)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
     Total Length: 599
-    Identification: 0xc6f2 (50930)
+    Identification: 0xa2e7 (41703)
     000. .... = Flags: 0x0
         0... .... = Reserved bit: Not set
         .0.. .... = Don't fragment: Not set
@@ -38,7 +38,7 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.41
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0x894d [validation disabled]
+    Header Checksum: 0xad58 [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.10
     Destination Address: 10.10.10.41
@@ -63,12 +63,12 @@ Session Initiation Protocol (INVITE)
             Request-URI Host Part: localcred.sip.vapi.ai
         [Resent Packet: False]
     Message Header
-        Record-Route: <sip:10.10.10.10;lr;ftag=1;did=76d.31e1>
-            Record-Route URI: sip:10.10.10.10;lr;ftag=1;did=76d.31e1
+        Record-Route: <sip:10.10.10.10;lr;ftag=1;did=76d.5671>
+            Record-Route URI: sip:10.10.10.10;lr;ftag=1;did=76d.5671
                 Record-Route Host Part: 10.10.10.10
                 Record-Route URI parameter: lr
                 Record-Route URI parameter: ftag=1
-                Record-Route URI parameter: did=76d.31e1
+                Record-Route URI parameter: did=76d.5671
         Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bKe9d3.afa8c18d49ee6f8b6e02c257babf183b.0
             Transport: UDP
             Sent-by Address: 10.10.10.10
@@ -116,13 +116,13 @@ Session Initiation Protocol (INVITE)
 
 Frame 4: 382 bytes on wire (3056 bits), 382 bytes captured (3056 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 24, 2026 02:17:23.069884000 +03
-    UTC Arrival Time: Apr 23, 2026 23:17:23.069884000 UTC
-    Epoch Arrival Time: 1776986243.069884000
+    Arrival Time: Apr 24, 2026 21:29:03.388796000 +03
+    UTC Arrival Time: Apr 24, 2026 18:29:03.388796000 UTC
+    Epoch Arrival Time: 1777055343.388796000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.000136000 seconds]
-    [Time delta from previous displayed frame: 0.000136000 seconds]
-    [Time since reference or first frame: 0.000889000 seconds]
+    [Time delta from previous captured frame: 0.000134000 seconds]
+    [Time delta from previous displayed frame: 0.000134000 seconds]
+    [Time since reference or first frame: 0.000935000 seconds]
     Frame Number: 4
     Frame Length: 382 bytes (3056 bits)
     Capture Length: 382 bytes (3056 bits)
@@ -146,7 +146,7 @@ Internet Protocol Version 4, Src: 10.10.10.41, Dst: 10.10.10.10
         0000 00.. = Differentiated Services Codepoint: Default (0)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
     Total Length: 368
-    Identification: 0xf156 (61782)
+    Identification: 0x615c (24924)
     010. .... = Flags: 0x2, Don't fragment
         0... .... = Reserved bit: Not set
         .1.. .... = Don't fragment: Set
@@ -154,7 +154,7 @@ Internet Protocol Version 4, Src: 10.10.10.41, Dst: 10.10.10.10
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0x1fe0 [validation disabled]
+    Header Checksum: 0xafda [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.41
     Destination Address: 10.10.10.10
@@ -166,8 +166,8 @@ User Datagram Protocol, Src Port: 5070, Dst Port: 5060
     [Checksum Status: Unverified]
     [Stream index: 1]
     [Timestamps]
-        [Time since first frame: 0.000136000 seconds]
-        [Time since previous frame: 0.000136000 seconds]
+        [Time since first frame: 0.000134000 seconds]
+        [Time since previous frame: 0.000134000 seconds]
     UDP payload (340 bytes)
 Session Initiation Protocol (503)
     Status-Line: SIP/2.0 503 Service Unavailable
@@ -204,13 +204,13 @@ Session Initiation Protocol (503)
 
 Frame 6: 613 bytes on wire (4904 bits), 613 bytes captured (4904 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 24, 2026 02:17:23.070132000 +03
-    UTC Arrival Time: Apr 23, 2026 23:17:23.070132000 UTC
-    Epoch Arrival Time: 1776986243.070132000
+    Arrival Time: Apr 24, 2026 21:29:03.389070000 +03
+    UTC Arrival Time: Apr 24, 2026 18:29:03.389070000 UTC
+    Epoch Arrival Time: 1777055343.389070000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.000111000 seconds]
-    [Time delta from previous displayed frame: 0.000248000 seconds]
-    [Time since reference or first frame: 0.001137000 seconds]
+    [Time delta from previous captured frame: 0.000124000 seconds]
+    [Time delta from previous displayed frame: 0.000274000 seconds]
+    [Time since reference or first frame: 0.001209000 seconds]
     Frame Number: 6
     Frame Length: 613 bytes (4904 bits)
     Capture Length: 613 bytes (4904 bits)
@@ -234,7 +234,7 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.42
         0001 00.. = Differentiated Services Codepoint: Unknown (4)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
     Total Length: 599
-    Identification: 0x159b (5531)
+    Identification: 0x8043 (32835)
     000. .... = Flags: 0x0
         0... .... = Reserved bit: Not set
         .0.. .... = Don't fragment: Not set
@@ -242,7 +242,7 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.42
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0x3aa4 [validation disabled]
+    Header Checksum: 0xcffb [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.10
     Destination Address: 10.10.10.42
@@ -267,12 +267,12 @@ Session Initiation Protocol (INVITE)
             Request-URI Host Part: localcred.sip.vapi.ai
         [Resent Packet: False]
     Message Header
-        Record-Route: <sip:10.10.10.10;lr;ftag=1;did=76d.31e1>
-            Record-Route URI: sip:10.10.10.10;lr;ftag=1;did=76d.31e1
+        Record-Route: <sip:10.10.10.10;lr;ftag=1;did=76d.5671>
+            Record-Route URI: sip:10.10.10.10;lr;ftag=1;did=76d.5671
                 Record-Route Host Part: 10.10.10.10
                 Record-Route URI parameter: lr
                 Record-Route URI parameter: ftag=1
-                Record-Route URI parameter: did=76d.31e1
+                Record-Route URI parameter: did=76d.5671
         Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bKe9d3.afa8c18d49ee6f8b6e02c257babf183b.1
             Transport: UDP
             Sent-by Address: 10.10.10.10
@@ -320,13 +320,13 @@ Session Initiation Protocol (INVITE)
 
 Frame 8: 391 bytes on wire (3128 bits), 391 bytes captured (3128 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 24, 2026 02:17:23.071382000 +03
-    UTC Arrival Time: Apr 23, 2026 23:17:23.071382000 UTC
-    Epoch Arrival Time: 1776986243.071382000
+    Arrival Time: Apr 24, 2026 21:29:03.390397000 +03
+    UTC Arrival Time: Apr 24, 2026 18:29:03.390397000 UTC
+    Epoch Arrival Time: 1777055343.390397000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.001128000 seconds]
-    [Time delta from previous displayed frame: 0.001250000 seconds]
-    [Time since reference or first frame: 0.002387000 seconds]
+    [Time delta from previous captured frame: 0.001217000 seconds]
+    [Time delta from previous displayed frame: 0.001327000 seconds]
+    [Time since reference or first frame: 0.002536000 seconds]
     Frame Number: 8
     Frame Length: 391 bytes (3128 bits)
     Capture Length: 391 bytes (3128 bits)
@@ -350,7 +350,7 @@ Internet Protocol Version 4, Src: 10.10.10.42, Dst: 10.10.10.10
         0000 00.. = Differentiated Services Codepoint: Default (0)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
     Total Length: 377
-    Identification: 0xff86 (65414)
+    Identification: 0x23a7 (9127)
     010. .... = Flags: 0x2, Don't fragment
         0... .... = Reserved bit: Not set
         .1.. .... = Don't fragment: Set
@@ -358,7 +358,7 @@ Internet Protocol Version 4, Src: 10.10.10.42, Dst: 10.10.10.10
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0x11a6 [validation disabled]
+    Header Checksum: 0xed85 [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.42
     Destination Address: 10.10.10.10
@@ -370,8 +370,8 @@ User Datagram Protocol, Src Port: 5080, Dst Port: 5060
     [Checksum Status: Unverified]
     [Stream index: 2]
     [Timestamps]
-        [Time since first frame: 0.001250000 seconds]
-        [Time since previous frame: 0.001128000 seconds]
+        [Time since first frame: 0.001327000 seconds]
+        [Time since previous frame: 0.001217000 seconds]
     UDP payload (349 bytes)
 Session Initiation Protocol (180)
     Status-Line: SIP/2.0 180 Ringing
@@ -412,13 +412,13 @@ Session Initiation Protocol (180)
 
 Frame 9: 310 bytes on wire (2480 bits), 310 bytes captured (2480 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 24, 2026 02:17:23.071534000 +03
-    UTC Arrival Time: Apr 23, 2026 23:17:23.071534000 UTC
-    Epoch Arrival Time: 1776986243.071534000
+    Arrival Time: Apr 24, 2026 21:29:03.390624000 +03
+    UTC Arrival Time: Apr 24, 2026 18:29:03.390624000 UTC
+    Epoch Arrival Time: 1777055343.390624000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.000152000 seconds]
-    [Time delta from previous displayed frame: 0.000152000 seconds]
-    [Time since reference or first frame: 0.002539000 seconds]
+    [Time delta from previous captured frame: 0.000227000 seconds]
+    [Time delta from previous displayed frame: 0.000227000 seconds]
+    [Time since reference or first frame: 0.002763000 seconds]
     Frame Number: 9
     Frame Length: 310 bytes (2480 bits)
     Capture Length: 310 bytes (2480 bits)
@@ -442,7 +442,7 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.20
         0001 00.. = Differentiated Services Codepoint: Unknown (4)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
     Total Length: 296
-    Identification: 0x4a5a (19034)
+    Identification: 0x22bd (8893)
     000. .... = Flags: 0x0
         0... .... = Reserved bit: Not set
         .0.. .... = Don't fragment: Not set
@@ -450,7 +450,7 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.20
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0x072a [validation disabled]
+    Header Checksum: 0x2ec7 [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.10
     Destination Address: 10.10.10.20
@@ -462,8 +462,8 @@ User Datagram Protocol, Src Port: 5060, Dst Port: 5062
     [Checksum Status: Unverified]
     [Stream index: 0]
     [Timestamps]
-        [Time since first frame: 0.002539000 seconds]
-        [Time since previous frame: 0.001867000 seconds]
+        [Time since first frame: 0.002763000 seconds]
+        [Time since previous frame: 0.002072000 seconds]
     UDP payload (268 bytes)
 Session Initiation Protocol (180)
     Status-Line: SIP/2.0 180 Ringing
@@ -501,13 +501,13 @@ Session Initiation Protocol (180)
 
 Frame 10: 386 bytes on wire (3088 bits), 386 bytes captured (3088 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 24, 2026 02:17:23.072499000 +03
-    UTC Arrival Time: Apr 23, 2026 23:17:23.072499000 UTC
-    Epoch Arrival Time: 1776986243.072499000
+    Arrival Time: Apr 24, 2026 21:29:03.391620000 +03
+    UTC Arrival Time: Apr 24, 2026 18:29:03.391620000 UTC
+    Epoch Arrival Time: 1777055343.391620000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.000965000 seconds]
-    [Time delta from previous displayed frame: 0.000965000 seconds]
-    [Time since reference or first frame: 0.003504000 seconds]
+    [Time delta from previous captured frame: 0.000996000 seconds]
+    [Time delta from previous displayed frame: 0.000996000 seconds]
+    [Time since reference or first frame: 0.003759000 seconds]
     Frame Number: 10
     Frame Length: 386 bytes (3088 bits)
     Capture Length: 386 bytes (3088 bits)
@@ -531,7 +531,7 @@ Internet Protocol Version 4, Src: 10.10.10.42, Dst: 10.10.10.10
         0000 00.. = Differentiated Services Codepoint: Default (0)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
     Total Length: 372
-    Identification: 0xff87 (65415)
+    Identification: 0x23a8 (9128)
     010. .... = Flags: 0x2, Don't fragment
         0... .... = Reserved bit: Not set
         .1.. .... = Don't fragment: Set
@@ -539,7 +539,7 @@ Internet Protocol Version 4, Src: 10.10.10.42, Dst: 10.10.10.10
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0x11aa [validation disabled]
+    Header Checksum: 0xed89 [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.42
     Destination Address: 10.10.10.10
@@ -551,8 +551,8 @@ User Datagram Protocol, Src Port: 5080, Dst Port: 5060
     [Checksum Status: Unverified]
     [Stream index: 2]
     [Timestamps]
-        [Time since first frame: 0.002367000 seconds]
-        [Time since previous frame: 0.001117000 seconds]
+        [Time since first frame: 0.002550000 seconds]
+        [Time since previous frame: 0.001223000 seconds]
     UDP payload (344 bytes)
 Session Initiation Protocol (200)
     Status-Line: SIP/2.0 200 OK
@@ -593,13 +593,13 @@ Session Initiation Protocol (200)
 
 Frame 11: 305 bytes on wire (2440 bits), 305 bytes captured (2440 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 24, 2026 02:17:23.072643000 +03
-    UTC Arrival Time: Apr 23, 2026 23:17:23.072643000 UTC
-    Epoch Arrival Time: 1776986243.072643000
+    Arrival Time: Apr 24, 2026 21:29:03.391782000 +03
+    UTC Arrival Time: Apr 24, 2026 18:29:03.391782000 UTC
+    Epoch Arrival Time: 1777055343.391782000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.000144000 seconds]
-    [Time delta from previous displayed frame: 0.000144000 seconds]
-    [Time since reference or first frame: 0.003648000 seconds]
+    [Time delta from previous captured frame: 0.000162000 seconds]
+    [Time delta from previous displayed frame: 0.000162000 seconds]
+    [Time since reference or first frame: 0.003921000 seconds]
     Frame Number: 11
     Frame Length: 305 bytes (2440 bits)
     Capture Length: 305 bytes (2440 bits)
@@ -623,7 +623,7 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.20
         0001 00.. = Differentiated Services Codepoint: Unknown (4)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
     Total Length: 291
-    Identification: 0x4a5b (19035)
+    Identification: 0x22be (8894)
     000. .... = Flags: 0x0
         0... .... = Reserved bit: Not set
         .0.. .... = Don't fragment: Not set
@@ -631,7 +631,7 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.20
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0x072e [validation disabled]
+    Header Checksum: 0x2ecb [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.10
     Destination Address: 10.10.10.20
@@ -643,8 +643,8 @@ User Datagram Protocol, Src Port: 5060, Dst Port: 5062
     [Checksum Status: Unverified]
     [Stream index: 0]
     [Timestamps]
-        [Time since first frame: 0.003648000 seconds]
-        [Time since previous frame: 0.001109000 seconds]
+        [Time since first frame: 0.003921000 seconds]
+        [Time since previous frame: 0.001158000 seconds]
     UDP payload (263 bytes)
 Session Initiation Protocol (200)
     Status-Line: SIP/2.0 200 OK

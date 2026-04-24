@@ -1,0 +1,56 @@
+----------------------------------------------- 2026-04-24 21:28:51.275902
+UDP message sent (342 bytes):
+
+INVITE sip:800@lab.local SIP/2.0
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-279-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>
+Call-ID: 1-279@10.10.10.99
+CSeq: 1 INVITE
+Contact: <sip:carrier@10.10.10.99:5063>
+Max-Forwards: 70
+P-Asserted-Identity: <sip:971501234567@etisalat.local>
+Content-Length: 0
+
+
+----------------------------------------------- 2026-04-24 21:28:51.276379
+UDP message received [303] bytes :
+
+SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-279-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.16d6b403
+Call-ID: 1-279@10.10.10.99
+CSeq: 1 INVITE
+Server: kamailio (5.7.4 (x86_64/linux))
+Content-Length: 0
+
+
+-----------------------------------------------
+Unexpected UDP message received:
+
+SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-279-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.16d6b403
+Call-ID: 1-279@10.10.10.99
+CSeq: 1 INVITE
+Server: kamailio (5.7.4 (x86_64/linux))
+Content-Length: 0
+
+
+----------------------------------------------- 2026-04-24 21:28:51.276467
+UDP message sent (364 bytes):
+
+ACK sip:800@lab.local SIP/2.0
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-279-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.16d6b403
+Call-ID: 1-279@10.10.10.99
+CSeq: 1 ACK
+Contact: <sip:sipp@10.10.10.99:5063;transport=UDP>
+Max-Forwards: 70
+Subject: Performance Test
+Content-Length: 0
+
+

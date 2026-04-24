@@ -1,15 +1,15 @@
 Resolving remote host '10.10.10.10'... Done.
-2026-04-24	02:17:17.237222	1776986237.237222: Aborting call on unexpected message for Call-Id '100-366@10.10.10.20': while expecting '100' (index 1), received 'SIP/2.0 503 Rate Limit Exceeded
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-366-100-0
+2026-04-24	21:28:57.655998	1777055337.655998: Aborting call on unexpected message for Call-Id '100-368@10.10.10.20': while expecting '100' (index 1), received 'SIP/2.0 503 Rate Limit Exceeded
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-368-100-0
 From: <sip:0555123456@etisalat.local>;tag=100
-To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.83b3b261
-Call-ID: 100-366@10.10.10.20
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.91dbda62
+Call-ID: 100-368@10.10.10.20
 CSeq: 1 INVITE
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
 
 '
-There were more errors, see 'carrier-pai_366_errors.log' file
+There were more errors, see 'carrier_errors.log' file
 ------------------------------ Scenario Screen -------- [1-9]: Change Screen --
   Call rate (length)   Port   Total-time  Total-calls  Remote-host
   50.0(0 ms)/1.000s   5062       2.00 s          100  10.10.10.10:5060(UDP)
@@ -30,14 +30,14 @@ There were more errors, see 'carrier-pai_366_errors.log' file
 5 :       Pause [   1000ms]         13                            0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-24	02:17:15.233110	1776986235.233110         
-  Last Reset Time        | 2026-04-24	02:17:17.237307	1776986237.237307         
-  Current Time           | 2026-04-24	02:17:17.237331	1776986237.237331         
+  Start Time             | 2026-04-24	21:28:55.653434	1777055335.653434         
+  Last Reset Time        | 2026-04-24	21:28:57.656105	1777055337.656105         
+  Current Time           | 2026-04-24	21:28:57.656132	1777055337.656132         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------
   Elapsed Time           | 00:00:00:000000           | 00:00:00:000000          
-  Call Rate              |    0.000 cps              |   49.900 cps             
+  Call Rate              |    0.000 cps              |   49.950 cps             
 -------------------------+---------------------------+--------------------------
   Incoming calls created |        0                  |        0                 
   Outgoing calls created |        0                  |      100                 

@@ -1,5 +1,0 @@
-mode=pike
-pcap=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/signaling.pcap
-summary=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/tshark-summary.tsv
-blocked=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/tshark-503.tsv
-metrics=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/tshark-metrics.txt

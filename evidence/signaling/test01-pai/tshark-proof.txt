@@ -1,15 +1,15 @@
-Frame 3: 611 bytes on wire (4888 bits), 611 bytes captured (4888 bits)
+Frame 3: 612 bytes on wire (4896 bits), 612 bytes captured (4896 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 24, 2026 02:16:57.587640000 +03
-    UTC Arrival Time: Apr 23, 2026 23:16:57.587640000 UTC
-    Epoch Arrival Time: 1776986217.587640000
+    Arrival Time: Apr 24, 2026 21:28:38.053784000 +03
+    UTC Arrival Time: Apr 24, 2026 18:28:38.053784000 UTC
+    Epoch Arrival Time: 1777055318.053784000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.000203000 seconds]
+    [Time delta from previous captured frame: 0.000088000 seconds]
     [Time delta from previous displayed frame: 0.000000000 seconds]
-    [Time since reference or first frame: 0.002558000 seconds]
+    [Time since reference or first frame: 0.001899000 seconds]
     Frame Number: 3
-    Frame Length: 611 bytes (4888 bits)
-    Capture Length: 611 bytes (4888 bits)
+    Frame Length: 612 bytes (4896 bits)
+    Capture Length: 612 bytes (4896 bits)
     [Frame is marked: False]
     [Frame is ignored: False]
     [Protocols in frame: eth:ethertype:ip:udp:sip]
@@ -23,14 +23,14 @@ Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 
         .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
         .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
     Type: IPv4 (0x0800)
-Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.42
+Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.41
     0100 .... = Version: 4
     .... 0101 = Header Length: 20 bytes (5)
     Differentiated Services Field: 0x10 (DSCP: Unknown, ECN: Not-ECT)
         0001 00.. = Differentiated Services Codepoint: Unknown (4)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
-    Total Length: 597
-    Identification: 0x0e65 (3685)
+    Total Length: 598
+    Identification: 0x9cc5 (40133)
     000. .... = Flags: 0x0
         0... .... = Reserved bit: Not set
         .0.. .... = Don't fragment: Not set
@@ -38,21 +38,21 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.42
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0x41dc [validation disabled]
+    Header Checksum: 0xb37b [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.10
-    Destination Address: 10.10.10.42
-User Datagram Protocol, Src Port: 5060, Dst Port: 5080
+    Destination Address: 10.10.10.41
+User Datagram Protocol, Src Port: 5060, Dst Port: 5070
     Source Port: 5060
-    Destination Port: 5080
-    Length: 577
+    Destination Port: 5070
+    Length: 578
     Checksum: 0x2a9a [unverified]
     [Checksum Status: Unverified]
     [Stream index: 1]
     [Timestamps]
         [Time since first frame: 0.000000000 seconds]
         [Time since previous frame: 0.000000000 seconds]
-    UDP payload (569 bytes)
+    UDP payload (570 bytes)
 Session Initiation Protocol (INVITE)
     Request-Line: INVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
         Method: INVITE
@@ -63,21 +63,21 @@ Session Initiation Protocol (INVITE)
             Request-URI Host Part: localcred.sip.vapi.ai
         [Resent Packet: False]
     Message Header
-        Record-Route: <sip:10.10.10.10;lr;ftag=1;did=cca.6d91>
-            Record-Route URI: sip:10.10.10.10;lr;ftag=1;did=cca.6d91
+        Record-Route: <sip:10.10.10.10;lr;ftag=1;did=1d3.897>
+            Record-Route URI: sip:10.10.10.10;lr;ftag=1;did=1d3.897
                 Record-Route Host Part: 10.10.10.10
                 Record-Route URI parameter: lr
                 Record-Route URI parameter: ftag=1
-                Record-Route URI parameter: did=cca.6d91
-        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK30bc.3d8bd4a00afbdfc32d0d9eb3db81bee9.0
+                Record-Route URI parameter: did=1d3.897
+        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK8047.a0810d519f574cda10c47414ab1ebd51.0
             Transport: UDP
             Sent-by Address: 10.10.10.10
-            Branch: z9hG4bK30bc.3d8bd4a00afbdfc32d0d9eb3db81bee9.0
-        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-95-1-0
+            Branch: z9hG4bK8047.a0810d519f574cda10c47414ab1ebd51.0
+        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-103-1-0
             Transport: UDP
             Sent-by Address: 10.10.10.20
             Sent-by port: 5062
-            Branch: z9hG4bK-95-1-0
+            Branch: z9hG4bK-103-1-0
         From: <sip:971501234567@etisalat.local>;tag=1
             SIP from address: sip:971501234567@etisalat.local
                 SIP from address User Part: 971501234567
@@ -87,8 +87,8 @@ Session Initiation Protocol (INVITE)
             SIP to address: sip:800@lab.local
                 SIP to address User Part: 800
                 SIP to address Host Part: lab.local
-        Call-ID: 1-95@10.10.10.20
-        [Generated Call-ID: 1-95@10.10.10.20]
+        Call-ID: 1-103@10.10.10.20
+        [Generated Call-ID: 1-103@10.10.10.20]
         CSeq: 1 INVITE
             Sequence Number: 1
             Method: INVITE

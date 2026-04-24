@@ -6,9 +6,8 @@ This document records the useful outputs, decisions, corrections, and artifacts 
 
 ## Related Documents
 
-- [etisalat-vapi-sbc-solution-design.md](/C:/Users/DELL/Downloads/sip-lab-wsl2/docs/etisalat-vapi-sbc-solution-design.md) for architecture intent and solution design
-- [verified-wsl2-kamailio-rtpengine-sipp-lab-plan.md](/C:/Users/DELL/Downloads/sip-lab-wsl2/docs/verified-wsl2-kamailio-rtpengine-sipp-lab-plan.md) for the execution plan
-- [proposal-safe-production-notes.md](/C:/Users/DELL/Downloads/sip-lab-wsl2/docs/proposal-safe-production-notes.md) for production-safe interpretation of the lab results
+- [etisalat-vapi-sbc-solution-design.md](etisalat-vapi-sbc-solution-design.md) for architecture intent and solution design
+- [wsl2-lab-build-record.md](wsl2-lab-build-record.md) for the rebuild guide, topology, and current test suite
 
 ## Artifact Roots
 
@@ -118,7 +117,7 @@ Conclusion:
 - `sip-tester` is the correct Ubuntu 24.04 SIPp package
 - `rtpengine-daemon` is the correct first RTPEngine path for WSL2
 
-## Entry 003: Verified-plan publication
+## Entry 003: Initial planning publication
 
 Objective:
 
@@ -126,13 +125,13 @@ Objective:
 
 Output:
 
-- created verified plan document
+- created the initial verified plan material
 - created this evidence log
 
 Artifact path:
 
-- [verified-wsl2-kamailio-rtpengine-sipp-lab-plan.md](/C:/Users/DELL/Downloads/sip-lab-wsl2/docs/verified-wsl2-kamailio-rtpengine-sipp-lab-plan.md)
-- [implementation-evidence-log.md](/C:/Users/DELL/Downloads/sip-lab-wsl2/docs/implementation-evidence-log.md)
+- [wsl2-lab-build-record.md](wsl2-lab-build-record.md)
+- [implementation-evidence-log.md](implementation-evidence-log.md)
 
 Result:
 
@@ -142,18 +141,6 @@ Conclusion:
 
 - documentation baseline is now established
 - implementation can proceed with traceable checkpoints
-
-## Pending Execution Entries
-
-The next entries will record:
-
-- workspace bootstrap
-- package installation
-- config generation
-- syntax validation
-- signaling tests
-- RTPEngine tests
-- pcap and log artifact capture
 
 ## Entry 004: WSL runtime workspace bootstrap
 
@@ -225,9 +212,9 @@ Result:
 
 Artifact path:
 
-- [01-apt-update.log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/01-apt-update.log)
-- [02-apt-install-base.log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/02-apt-install-base.log)
-- [03-apt-install-rtpengine-daemon.log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/03-apt-install-rtpengine-daemon.log)
+- [01-apt-update.log](../evidence/01-apt-update.log)
+- [02-apt-install-base.log](../evidence/02-apt-install-base.log)
+- [03-apt-install-rtpengine-daemon.log](../evidence/03-apt-install-rtpengine-daemon.log)
 
 Conclusion:
 
@@ -267,8 +254,8 @@ Result:
 
 Artifact path:
 
-- [04-binary-checks.txt](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/04-binary-checks.txt)
-- [05-dpkg-package-snapshot.txt](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/05-dpkg-package-snapshot.txt)
+- [04-binary-checks.txt](../evidence/04-binary-checks.txt)
+- [05-dpkg-package-snapshot.txt](../evidence/05-dpkg-package-snapshot.txt)
 
 Conclusion:
 
@@ -315,10 +302,10 @@ Result:
 
 Artifact path:
 
-- [06-sync-to-wsl.log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/06-sync-to-wsl.log)
-- [07-loopback-ip-setup.txt](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/07-loopback-ip-setup.txt)
-- [08-kamailio-config-check.txt](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/08-kamailio-config-check.txt)
-- [kamailio-lab.cfg](/C:/Users/DELL/Downloads/sip-lab-wsl2/lab/kamailio/kamailio-lab.cfg)
+- [06-sync-to-wsl.log](../evidence/06-sync-to-wsl.log)
+- [07-loopback-ip-setup.txt](../evidence/07-loopback-ip-setup.txt)
+- [08-kamailio-config-check.txt](../evidence/08-kamailio-config-check.txt)
+- [kamailio-lab.cfg](../lab/kamailio/kamailio-lab.cfg)
 
 Conclusion:
 
@@ -356,9 +343,9 @@ Result:
 
 Artifact path:
 
-- [test01-pai Kamailio log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/kamailio.log)
-- [test01-pai pcap summary](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/pcap-summary.txt)
-- [test01-pai tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/tshark-proof.txt)
+- [test01-pai Kamailio log](../evidence/signaling/test01-pai/kamailio.log)
+- [test01-pai tshark summary](../evidence/signaling/test01-pai/tshark-summary.tsv)
+- [test01-pai tshark proof](../evidence/signaling/test01-pai/tshark-proof.txt)
 
 Conclusion:
 
@@ -396,9 +383,9 @@ Result:
 
 Artifact path:
 
-- [kamailio-lab.cfg](/C:/Users/DELL/Downloads/sip-lab-wsl2/lab/kamailio/kamailio-lab.cfg)
-- [test02-from-only Kamailio log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test02-from-only/kamailio.log)
-- [test02-from-only tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test02-from-only/tshark-proof.txt)
+- [kamailio-lab.cfg](../lab/kamailio/kamailio-lab.cfg)
+- [test02-from-only Kamailio log](../evidence/signaling/test02-from-only/kamailio.log)
+- [test02-from-only tshark proof](../evidence/signaling/test02-from-only/tshark-proof.txt)
 
 Conclusion:
 
@@ -432,9 +419,9 @@ Result:
 
 Artifact path:
 
-- [test03-untrusted Kamailio log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test03-untrusted/kamailio.log)
-- [test03-untrusted pcap summary](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test03-untrusted/pcap-summary.txt)
-- [test03-untrusted tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test03-untrusted/tshark-proof.txt)
+- [test03-untrusted Kamailio log](../evidence/signaling/test03-untrusted/kamailio.log)
+- [test03-untrusted tshark summary](../evidence/signaling/test03-untrusted/tshark-summary.tsv)
+- [test03-untrusted tshark proof](../evidence/signaling/test03-untrusted/tshark-proof.txt)
 
 Conclusion:
 
@@ -466,10 +453,10 @@ Result:
 
 Artifact path:
 
-- [test04-pike Kamailio log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/kamailio.log)
-- [test04-pike pcap summary](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/pcap-summary.txt)
-- [test04-pike carrier output](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/carrier.out)
-- [test04-pike tshark metrics](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/tshark-metrics.txt)
+- [test04-pike Kamailio log](../evidence/signaling/test04-pike/kamailio.log)
+- [test04-pike tshark summary](../evidence/signaling/test04-pike/tshark-summary.tsv)
+- [test04-pike carrier output](../evidence/signaling/test04-pike/carrier.out)
+- [test04-pike tshark metrics](../evidence/signaling/test04-pike/tshark-metrics.txt)
 
 Conclusion:
 
@@ -504,10 +491,10 @@ Result:
 
 Artifact path:
 
-- [test-failover Kamailio log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test-failover/kamailio.log)
-- [test-failover pcap summary](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test-failover/pcap-summary.txt)
-- [test-failover tshark summary](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test-failover/tshark-summary.tsv)
-- [test-failover tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test-failover/tshark-proof.txt)
+- [test-failover Kamailio log](../evidence/signaling/test-failover/kamailio.log)
+- [test-failover signaling pcap](../evidence/signaling/test-failover/signaling.pcap)
+- [test-failover tshark summary](../evidence/signaling/test-failover/tshark-summary.tsv)
+- [test-failover tshark proof](../evidence/signaling/test-failover/tshark-proof.txt)
 
 Conclusion:
 
@@ -547,10 +534,10 @@ Result:
 
 Artifact path:
 
-- [test05-sdp Kamailio log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test05-sdp/kamailio.log)
-- [test05-sdp RTPEngine log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test05-sdp/rtpengine.log)
-- [test05-sdp ASCII pcap](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test05-sdp/pcap-ascii.txt)
-- [test05-sdp tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test05-sdp/tshark-proof.txt)
+- [test05-sdp Kamailio log](../evidence/rtp/test05-sdp/kamailio.log)
+- [test05-sdp RTPEngine log](../evidence/rtp/test05-sdp/rtpengine.log)
+- [test05-sdp signaling pcap](../evidence/rtp/test05-sdp/signaling.pcap)
+- [test05-sdp tshark proof](../evidence/rtp/test05-sdp/tshark-proof.txt)
 
 Conclusion:
 
@@ -592,10 +579,10 @@ Result:
 
 Artifact path:
 
-- [test06-cancel Kamailio log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test06-cancel/kamailio.log)
-- [test06-cancel RTPEngine log](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test06-cancel/rtpengine.log)
-- [test06-cancel pcap summary](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test06-cancel/pcap-summary.txt)
-- [test06-cancel tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test06-cancel/tshark-proof.txt)
+- [test06-cancel Kamailio log](../evidence/rtp/test06-cancel/kamailio.log)
+- [test06-cancel RTPEngine log](../evidence/rtp/test06-cancel/rtpengine.log)
+- [test06-cancel tshark summary](../evidence/rtp/test06-cancel/tshark-summary.tsv)
+- [test06-cancel tshark proof](../evidence/rtp/test06-cancel/tshark-proof.txt)
 
 Conclusion:
 
@@ -633,7 +620,7 @@ Result:
 
 Artifact path:
 
-- [test01-pai tshark decode](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/tshark-decode.txt)
+- [test01-pai tshark proof](../evidence/signaling/test01-pai/tshark-proof.txt)
 
 Conclusion:
 
@@ -655,11 +642,10 @@ wsl.exe -d Ubuntu -- bash -lc "bash /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/lab
 
 Outputs created:
 
-- [revalidate_with_tshark.sh](/C:/Users/DELL/Downloads/sip-lab-wsl2/lab/run/revalidate_with_tshark.sh)
-- [write_tshark_views.sh](/C:/Users/DELL/Downloads/sip-lab-wsl2/lab/tools/write_tshark_views.sh)
+- [revalidate_with_tshark.sh](../lab/run/revalidate_with_tshark.sh)
+- [write_tshark_views.sh](../lab/tools/write_tshark_views.sh)
 - per-test `tshark-summary.tsv`
 - per-test `tshark-proof.txt`
-- per-test `tshark-artifacts.txt`
 - `tshark-metrics.txt` and `tshark-503.tsv` for the Pike scenario
 
 Key output:
@@ -701,13 +687,13 @@ Result:
 
 Artifact path:
 
-- [test01-pai tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/tshark-proof.txt)
-- [test02-from-only tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test02-from-only/tshark-proof.txt)
-- [test03-untrusted tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test03-untrusted/tshark-proof.txt)
-- [test04-pike tshark metrics](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test04-pike/tshark-metrics.txt)
-- [test-failover tshark summary](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test-failover/tshark-summary.tsv)
-- [test05-sdp tshark proof](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test05-sdp/tshark-proof.txt)
-- [test06-cancel tshark summary](/C:/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test06-cancel/tshark-summary.tsv)
+- [test01-pai tshark proof](../evidence/signaling/test01-pai/tshark-proof.txt)
+- [test02-from-only tshark proof](../evidence/signaling/test02-from-only/tshark-proof.txt)
+- [test03-untrusted tshark proof](../evidence/signaling/test03-untrusted/tshark-proof.txt)
+- [test04-pike tshark metrics](../evidence/signaling/test04-pike/tshark-metrics.txt)
+- [test-failover tshark summary](../evidence/signaling/test-failover/tshark-summary.tsv)
+- [test05-sdp tshark proof](../evidence/rtp/test05-sdp/tshark-proof.txt)
+- [test06-cancel tshark summary](../evidence/rtp/test06-cancel/tshark-summary.tsv)
 
 Conclusion:
 

@@ -1,5 +1,5 @@
-2026-04-24	02:17:23.070096	1776986243.070096: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
-There were more errors, see 'vapi-503_449_errors.log' file
+2026-04-24	21:29:03.389028	1777055343.389028: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
+There were more errors, see 'vapi-a_errors.log' file
 ------------------------------ Scenario Screen -------- [1-9]: Change Screen --
   Port   Total-time  Total-calls  Transport
   5070       2.11 s            1  UDP
@@ -17,9 +17,9 @@ There were more errors, see 'vapi-503_449_errors.log' file
 1 :  <---------- 503                1         0                                
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-24	02:17:20.956282	1776986240.956282         
-  Last Reset Time        | 2026-04-24	02:17:23.070118	1776986243.070118         
-  Current Time           | 2026-04-24	02:17:23.070132	1776986243.070132         
+  Start Time             | 2026-04-24	21:29:01.272136	1777055341.272136         
+  Last Reset Time        | 2026-04-24	21:29:03.389041	1777055343.389041         
+  Current Time           | 2026-04-24	21:29:03.389056	1777055343.389056         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------

@@ -1,4 +1,0 @@
-mode=pai
-pcap=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/signaling.pcap
-summary=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/tshark-summary.tsv
-proof=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/tshark-proof.txt

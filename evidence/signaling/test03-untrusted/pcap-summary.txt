@@ -1,4 +1,0 @@
-reading from file signaling.pcap, link-type EN10MB (Ethernet), snapshot length 262144
-02:17:10.777011 IP 10.10.10.99.5063 > 10.10.10.10.5060: SIP: INVITE sip:800@lab.local SIP/2.0
-02:17:10.777429 IP 10.10.10.10.5060 > 10.10.10.99.5063: SIP: SIP/2.0 403 Forbidden
-02:17:10.780051 IP 10.10.10.99.5063 > 10.10.10.10.5060: SIP: ACK sip:800@lab.local SIP/2.0

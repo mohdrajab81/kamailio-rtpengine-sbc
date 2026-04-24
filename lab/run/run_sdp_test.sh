@@ -28,12 +28,12 @@ RPID=$!
 nohup sudo kamailio -DD -E -f "$LAB_ROOT/kamailio/kamailio-lab.cfg" > kamailio.log 2>&1 &
 KPID=$!
 
-nohup sipp -sf "$LAB_ROOT/sipp/vapi-sdp-answer.xml" -i 10.10.10.41 -p 5070 -m 1 -trace_msg -trace_err > vapi-a.out 2>&1 &
+nohup sipp -sf "$LAB_ROOT/sipp/vapi-sdp-answer.xml" -i 10.10.10.41 -p 5070 -m 1 -trace_msg -message_file vapi-a_messages.log -trace_err -error_file vapi-a_errors.log > vapi-a.out 2>&1 &
 APID=$!
-nohup sipp -sf "$LAB_ROOT/sipp/vapi-sdp-answer.xml" -i 10.10.10.42 -p 5080 -m 1 -trace_msg -trace_err > vapi-b.out 2>&1 &
+nohup sipp -sf "$LAB_ROOT/sipp/vapi-sdp-answer.xml" -i 10.10.10.42 -p 5080 -m 1 -trace_msg -message_file vapi-b_messages.log -trace_err -error_file vapi-b_errors.log > vapi-b.out 2>&1 &
 BPID=$!
 
-nohup sudo tcpdump -ni lo -w signaling.pcap "udp port 5060 or udp port 5070 or udp port 5080 or udp port 5064 or udp port 7078 or udp portrange 40000-40100" > tcpdump.out 2>&1 &
+nohup sudo tcpdump -ni lo -w signaling.pcap "udp port 5060 or udp port 5070 or udp port 5080 or udp port 5064 or udp port 7078 or udp portrange 40000-40100" > /dev/null 2>&1 &
 TPID=$!
 
 sleep 2
@@ -51,7 +51,7 @@ if ! ps -p "$KPID" >/dev/null 2>&1; then
 fi
 
 RC=0
-sipp 10.10.10.10:5060 -sf "$LAB_ROOT/sipp/carrier-pai-sdp.xml" -i 10.10.10.20 -p 5062 -m 1 -trace_msg -trace_err > carrier.out 2>&1 || RC=$?
+sipp 10.10.10.10:5060 -sf "$LAB_ROOT/sipp/carrier-pai-sdp.xml" -i 10.10.10.20 -p 5062 -m 1 -trace_msg -message_file carrier_messages.log -trace_err -error_file carrier_errors.log > carrier.out 2>&1 || RC=$?
 
 sleep 2
 
@@ -64,8 +64,6 @@ sudo pkill -f "kamailio -DD -E -f $LAB_ROOT/kamailio/kamailio-lab.cfg" >/dev/nul
 sudo pkill -f "rtpengine --interface=10.10.10.10" >/dev/null 2>&1 || true
 sleep 1
 
-tcpdump -nn -r signaling.pcap > pcap-summary.txt 2>&1 || true
-tcpdump -A -s 0 -nn -r signaling.pcap > pcap-ascii.txt 2>&1 || true
 cp -a "$TEST_DIR"/. "$ART_DIR"/
 
 printf 'test_name=%s\n' "$TEST_NAME"

@@ -65,16 +65,3 @@ case "$MODE" in
         exit 1
         ;;
 esac
-
-printf 'mode=%s\n' "$MODE" > "$ART_DIR/tshark-artifacts.txt"
-printf 'pcap=%s\n' "$PCAP" >> "$ART_DIR/tshark-artifacts.txt"
-printf 'summary=%s\n' "$ART_DIR/tshark-summary.tsv" >> "$ART_DIR/tshark-artifacts.txt"
-if [[ -f "$ART_DIR/tshark-proof.txt" ]]; then
-    printf 'proof=%s\n' "$ART_DIR/tshark-proof.txt" >> "$ART_DIR/tshark-artifacts.txt"
-fi
-if [[ -f "$ART_DIR/tshark-503.tsv" ]]; then
-    printf 'blocked=%s\n' "$ART_DIR/tshark-503.tsv" >> "$ART_DIR/tshark-artifacts.txt"
-fi
-if [[ -f "$ART_DIR/tshark-metrics.txt" ]]; then
-    printf 'metrics=%s\n' "$ART_DIR/tshark-metrics.txt" >> "$ART_DIR/tshark-artifacts.txt"
-fi

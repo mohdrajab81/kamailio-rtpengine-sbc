@@ -1,39 +1,38 @@
-2026-04-24	02:17:31.646522	1776986251.646522: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
 ------------------------------ Scenario Screen -------- [1-9]: Change Screen --
   Port   Total-time  Total-calls  Transport
-  5070       4.11 s            1  UDP
+  5070       5.63 s            0  UDP
 
-  Call limit 1 hit, 0.0 s period          0 ms scheduler resolution            
-  0 calls                                 Peak was 1 calls, after 2 s
-  0 Running, 2 Paused, 15 Woken up
+  0 new calls during 0.612 s period       1 ms scheduler resolution            
+  0 calls                                 Peak was 0 calls, after 0 s
+  0 Running, 2 Paused, 18 Woken up
   0 dead call msg (discarded)           
-  0 open sockets                          0/0/0 UDP errors (send/recv/cong)
-  0 open sockets                          0/0/0 UDP errors (send/recv/cong)
+  3 open sockets                          0/0/0 UDP errors (send/recv/cong)
+  0 Total RTP pckts sent                  0.000 last period RTP rate (kB/s)
 
                                  Messages  Retrans   Timeout   Unexpected-Msg
-0 :  ----------> INVITE             1         0         0         0            
+0 :  ----------> INVITE             0         0         0         0            
 
-1 :  <---------- 100                1         0                                
-2 :  <---------- 180                1         0                                
-3 :  <---------- 200                1         0                                
-4 :  [   2000ms] Pause              1                             0        
+1 :  <---------- 100                0         0                                
+2 :  <---------- 180                0         0                                
+3 :  <---------- 200                0         0                                
+4 :  [   2000ms] Pause              0                             0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-24	02:17:27.530123	1776986247.530123         
-  Last Reset Time        | 2026-04-24	02:17:31.646685	1776986251.646685         
-  Current Time           | 2026-04-24	02:17:31.646725	1776986251.646725         
+  Start Time             | 2026-04-24	21:29:07.798330	1777055347.798330         
+  Last Reset Time        | 2026-04-24	21:29:12.816383	1777055352.816383         
+  Current Time           | 2026-04-24	21:29:13.428484	1777055353.428484         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------
-  Elapsed Time           | 00:00:00:000000           | 00:00:00:000000          
-  Call Rate              |    0.000 cps              |    0.243 cps             
+  Elapsed Time           | 00:00:00:612000           | 00:00:00:612000          
+  Call Rate              |    0.000 cps              |    0.000 cps             
 -------------------------+---------------------------+--------------------------
-  Incoming calls created |        0                  |        1                 
+  Incoming calls created |        0                  |        0                 
   Outgoing calls created |        0                  |        0                 
-  Total Calls created    |                           |        1                 
+  Total Calls created    |                           |        0                 
   Current Calls          |        0                  |                          
 -------------------------+---------------------------+--------------------------
-  Successful call        |        0                  |        1                 
+  Successful call        |        0                  |        0                 
   Failed call            |        0                  |        0                 
 -------------------------+---------------------------+--------------------------
   Call Length            | 00:00:00:000000           | 00:00:00:000000          
