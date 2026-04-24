@@ -1,0 +1,17 @@
+[commands]
+/usr/sbin/kamailio
+/usr/bin/sipp
+/usr/bin/rtpengine
+/usr/sbin/kamcmd
+
+[versions]
+version: kamailio 5.7.4 (x86_64/linux) 
+flags: USE_TCP, USE_TLS, USE_SCTP, TLS_HOOKS, USE_RAW_SOCKS, DISABLE_NAGLE, USE_MCAST, DNS_IP_HACK, SHM_MMAP, PKG_MALLOC, MEM_JOIN_FREE, Q_MALLOC, F_MALLOC, TLSF_MALLOC, DBG_SR_MEMORY, USE_FUTEX, FAST_LOCK-ADAPTIVE_WAIT, USE_DNS_CACHE, USE_DNS_FAILOVER, USE_NAPTR, USE_DST_BLOCKLIST, HAVE_RESOLV_RES, TLS_PTHREAD_MUTEX_SHARED
+ADAPTIVE_WAIT_LOOPS 1024, MAX_RECV_BUFFER_SIZE 262144, MAX_URI_SIZE 1024, BUF_SIZE 65535, DEFAULT PKG_SIZE 8MB
+
+
+ SIPp v3.7.2-TLS-SCTP-PCAP.
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+

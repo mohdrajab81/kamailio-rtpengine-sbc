@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<scenario name="Carrier PAI SDP">
+  <send retrans="500">
+    <![CDATA[
+INVITE sip:800@lab.local SIP/2.0
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch]
+From: <sip:0555123456@etisalat.local>;tag=[call_number]
+To: <sip:800@lab.local>
+Call-ID: [call_id]
+CSeq: 1 INVITE
+Contact: <sip:carrier@[local_ip]:[local_port]>
+Max-Forwards: 70
+P-Asserted-Identity: <sip:971501234567@etisalat.local>
+Content-Type: application/sdp
+Content-Length: [len]
+
+v=0
+o=carrier 1 1 IN IP4 10.10.10.20
+s=Fake Carrier SDP
+c=IN IP4 10.10.10.20
+t=0 0
+m=audio 5064 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+    ]]>
+  </send>
+
+  <recv response="100" optional="true"/>
+  <recv response="180" optional="true"/>
+  <recv response="200"/>
+
+  <send>
+    <![CDATA[
+ACK sip:800@lab.local SIP/2.0
+Via: SIP/2.0/UDP [local_ip]:[local_port];branch=[branch]
+[last_From:]
+[last_To:]
+[last_Call-ID:]
+CSeq: 1 ACK
+Contact: <sip:carrier@[local_ip]:[local_port]>
+Max-Forwards: 70
+Content-Length: 0
+
+    ]]>
+  </send>
+
+  <pause milliseconds="1500"/>
+</scenario>

@@ -1,0 +1,3 @@
+# setid destination                              flags priority attrs
+1 sip:10.10.10.41:5070;transport=udp            0     10       duid=vapi-a
+1 sip:10.10.10.42:5080;transport=udp            0     10       duid=vapi-b

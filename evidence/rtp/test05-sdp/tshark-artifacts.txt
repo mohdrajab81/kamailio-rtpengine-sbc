@@ -1,0 +1,4 @@
+mode=sdp
+pcap=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test05-sdp/signaling.pcap
+summary=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test05-sdp/tshark-summary.tsv
+proof=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test05-sdp/tshark-proof.txt

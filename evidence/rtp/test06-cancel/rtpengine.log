@@ -1,0 +1,18 @@
+[1776986254.575122] INFO: [crypto] Generating new DTLS certificate
+[1776986254.581318] INFO: [core] Startup complete, version 11.5.1.18-1ubuntu1.2
+[1776986254.581823] INFO: [http] Websocket listener thread running
+[1776986256.669832] INFO: [control] Received command 'ping' from 127.0.0.1:45212
+[1776986256.669844] INFO: [control] Replying to 'ping' from 127.0.0.1:45212 (elapsed time 0.000000 sec)
+[1776986256.669990] INFO: [1-841@10.10.10.20]: [control] Received command 'offer' from 127.0.0.1:45212
+[1776986256.670015] NOTICE: [1-841@10.10.10.20]: [core] Creating new call
+[1776986256.670118] INFO: [1-841@10.10.10.20]: [control] Replying to 'offer' from 127.0.0.1:45212 (elapsed time 0.000122 sec)
+[1776986256.672240] INFO: [1-841@10.10.10.20]: [control] Received command 'delete' from 127.0.0.1:45212
+[1776986256.672281] INFO: [1-841@10.10.10.20]: [core] Scheduling deletion of call branch '1' (via-branch '') in 30 seconds
+[1776986256.672282] INFO: [1-841@10.10.10.20]: [core] Scheduling deletion of call branch '' (via-branch '') in 30 seconds
+[1776986256.672283] INFO: [1-841@10.10.10.20]: [core] Scheduling deletion of entire call in 30 seconds
+[1776986256.672288] INFO: [1-841@10.10.10.20]: [control] Replying to 'delete' from 127.0.0.1:45212 (elapsed time 0.000040 sec)
+[1776986256.689212] INFO: [1-841@10.10.10.20]: [control] Received command 'delete' from 127.0.0.1:33572
+[1776986256.689243] INFO: [1-841@10.10.10.20]: [core] Scheduling deletion of call branch '1' (via-branch '') in 30 seconds
+[1776986256.689245] INFO: [1-841@10.10.10.20]: [core] Scheduling deletion of entire call in 30 seconds
+[1776986256.689249] INFO: [1-841@10.10.10.20]: [control] Replying to 'delete' from 127.0.0.1:33572 (elapsed time 0.000024 sec)
+[1776986258.717728] INFO: [core] Version 11.5.1.18-1ubuntu1.2 shutting down

@@ -1,0 +1,39 @@
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5080       6.02 s            9  UDP
+
+  0 new calls during 0.000 s period       0 ms scheduler resolution            
+  0 calls                                 Peak was 9 calls, after 2 s
+  0 Running, 10 Paused, 29 Woken up
+  0 dead call msg (discarded)           
+  3 open sockets                          0/0/0 UDP errors (send/recv/cong)
+  3 open sockets                          0/0/0 UDP errors (send/recv/cong)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+0 :  ----------> INVITE             9         0         0         0            
+
+1 :  <---------- 100                9         0                                
+2 :  <---------- 180                9         0                                
+3 :  <---------- 200                9         0                                
+4 :  [   1500ms] Pause              9                             0        
+------------------------------ Test Terminated --------------------------------
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2026-04-24	02:17:13.222435	1776986233.222435         
+  Last Reset Time        | 2026-04-24	02:17:19.245056	1776986239.245056         
+  Current Time           | 2026-04-24	02:17:19.246525	1776986239.246525         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:001000           | 00:00:00:001000          
+  Call Rate              |    0.000 cps              |    1.494 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming calls created |        0                  |        9                 
+  Outgoing calls created |        0                  |        0                 
+  Total Calls created    |                           |        9                 
+  Current Calls          |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |        9                 
+  Failed call            |        0                  |        0                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:00:00:000000          
+------------------------------ Test Terminated --------------------------------

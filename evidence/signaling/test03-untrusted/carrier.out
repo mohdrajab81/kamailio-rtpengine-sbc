@@ -1,0 +1,50 @@
+Resolving remote host '10.10.10.10'... Done.
+2026-04-24	02:17:10.777472	1776986230.777472: Aborting call on unexpected message for Call-Id '1-275@10.10.10.99': while expecting '100' (index 1), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-275-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.15a179b0
+Call-ID: 1-275@10.10.10.99
+CSeq: 1 INVITE
+Server: kamailio (5.7.4 (x86_64/linux))
+Content-Length: 0
+
+'
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call rate (length)   Port   Total-time  Total-calls  Remote-host
+  10.0(0 ms)/1.000s   5063       0.10 s            1  10.10.10.10:5060(UDP)
+
+  Call limit 1 hit, 0.0 s period          0 ms scheduler resolution            
+  0 calls (limit 30)                      Peak was 1 calls, after 0 s
+  0 Running, 2 Paused, 1 Woken up
+  0 dead call msg (discarded)             0 out-of-call msg (discarded)
+  0 open sockets                          0/0/0 UDP errors (send/recv/cong)
+  0 open sockets                          0/0/0 UDP errors (send/recv/cong)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+0 :      INVITE ---------->         1         0         0                      
+1 :         100 <----------         0         0         0         1            
+2 :         180 <----------         0         0         0         0            
+3 :         200 <----------         0         0         0         0            
+4 :         ACK ---------->         0         0                                
+5 :       Pause [   1000ms]         0                             0        
+------------------------------ Test Terminated --------------------------------
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2026-04-24	02:17:10.676024	1776986230.676024         
+  Last Reset Time        | 2026-04-24	02:17:10.780102	1776986230.780102         
+  Current Time           | 2026-04-24	02:17:10.780119	1776986230.780119         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:000000           | 00:00:00:000000          
+  Call Rate              |    0.000 cps              |    9.615 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming calls created |        0                  |        0                 
+  Outgoing calls created |        0                  |        1                 
+  Total Calls created    |                           |        1                 
+  Current Calls          |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |        0                 
+  Failed call            |        0                  |        1                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:00:00:000000          
+------------------------------ Test Terminated --------------------------------

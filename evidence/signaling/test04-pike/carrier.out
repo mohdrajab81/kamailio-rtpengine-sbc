@@ -1,0 +1,51 @@
+Resolving remote host '10.10.10.10'... Done.
+2026-04-24	02:17:17.237222	1776986237.237222: Aborting call on unexpected message for Call-Id '100-366@10.10.10.20': while expecting '100' (index 1), received 'SIP/2.0 503 Rate Limit Exceeded
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-366-100-0
+From: <sip:0555123456@etisalat.local>;tag=100
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.83b3b261
+Call-ID: 100-366@10.10.10.20
+CSeq: 1 INVITE
+Server: kamailio (5.7.4 (x86_64/linux))
+Content-Length: 0
+
+'
+There were more errors, see 'carrier-pai_366_errors.log' file
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call rate (length)   Port   Total-time  Total-calls  Remote-host
+  50.0(0 ms)/1.000s   5062       2.00 s          100  10.10.10.10:5060(UDP)
+
+  Call limit 100 hit, 0.0 s period        0 ms scheduler resolution            
+  0 calls (limit 150)                     Peak was 14 calls, after 0 s
+  0 Running, 101 Paused, 118 Woken up
+  0 dead call msg (discarded)             0 out-of-call msg (discarded)
+  0 open sockets                          0/0/0 UDP errors (send/recv/cong)
+  0 open sockets                          0/0/0 UDP errors (send/recv/cong)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+0 :      INVITE ---------->         100       0         0                      
+1 :         100 <----------         13        0         0         87           
+2 :         180 <----------         13        0         0         0            
+3 :         200 <----------         13        0         0         0            
+4 :         ACK ---------->         13        0                                
+5 :       Pause [   1000ms]         13                            0        
+------------------------------ Test Terminated --------------------------------
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2026-04-24	02:17:15.233110	1776986235.233110         
+  Last Reset Time        | 2026-04-24	02:17:17.237307	1776986237.237307         
+  Current Time           | 2026-04-24	02:17:17.237331	1776986237.237331         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:000000           | 00:00:00:000000          
+  Call Rate              |    0.000 cps              |   49.900 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming calls created |        0                  |        0                 
+  Outgoing calls created |        0                  |      100                 
+  Total Calls created    |                           |      100                 
+  Current Calls          |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |       13                 
+  Failed call            |        0                  |       87                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:00:00:000000          
+------------------------------ Test Terminated --------------------------------

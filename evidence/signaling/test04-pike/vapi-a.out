@@ -1,0 +1,41 @@
+2026-04-24	02:17:15.419276	1776986235.419276: Aborting call on an unexpected CANCEL for call: 9-366@10.10.10.20
+There were more errors, see 'vapi-ok_350_errors.log' file
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5070       6.02 s            6  UDP
+
+  0 new calls during 0.000 s period       0 ms scheduler resolution            
+  0 calls                                 Peak was 5 calls, after 2 s
+  0 Running, 5 Paused, 24 Woken up
+  0 dead call msg (discarded)           
+  3 open sockets                          0/0/0 UDP errors (send/recv/cong)
+  3 open sockets                          0/0/0 UDP errors (send/recv/cong)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+0 :  ----------> INVITE             5         0         0         1            
+
+1 :  <---------- 100                5         0                                
+2 :  <---------- 180                5         0                                
+3 :  <---------- 200                4         0                                
+4 :  [   1500ms] Pause              4                             0        
+------------------------------ Test Terminated --------------------------------
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2026-04-24	02:17:13.222323	1776986233.222323         
+  Last Reset Time        | 2026-04-24	02:17:19.245219	1776986239.245219         
+  Current Time           | 2026-04-24	02:17:19.246490	1776986239.246490         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:001000           | 00:00:00:001000          
+  Call Rate              |    0.000 cps              |    0.996 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming calls created |        0                  |        6                 
+  Outgoing calls created |        0                  |        0                 
+  Total Calls created    |                           |        6                 
+  Current Calls          |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |        4                 
+  Failed call            |        0                  |        2                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:00:00:000000          
+------------------------------ Test Terminated --------------------------------

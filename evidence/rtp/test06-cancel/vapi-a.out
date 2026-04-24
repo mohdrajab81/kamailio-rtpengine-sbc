@@ -1,0 +1,43 @@
+2026-04-24	02:17:36.690986	1776986256.690986: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Port   Total-time  Total-calls  Transport
+  5070       2.13 s            1  UDP
+
+  Call limit 1 hit, 0.0 s period          0 ms scheduler resolution            
+  0 calls                                 Peak was 1 calls, after 2 s
+  0 Running, 3 Paused, 7 Woken up
+  0 dead call msg (discarded)           
+  0 open sockets                          0/0/0 UDP errors (send/recv/cong)
+  0 open sockets                          0/0/0 UDP errors (send/recv/cong)
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+0 :  ----------> INVITE             1         0         0         0            
+
+1 :  <---------- 100                1         0                                
+2 :  <---------- 180                1         0                                
+3 :  ----------> CANCEL             1         0         0         0            
+
+4 :  <---------- 200                1         0                                
+5 :  <---------- 487                1         0                                
+6 :  ----------> ACK                1         0         0         0            
+------------------------------ Test Terminated --------------------------------
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2026-04-24	02:17:34.555140	1776986254.555140         
+  Last Reset Time        | 2026-04-24	02:17:36.691031	1776986256.691031         
+  Current Time           | 2026-04-24	02:17:36.691045	1776986256.691045         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:000000           | 00:00:00:000000          
+  Call Rate              |    0.000 cps              |    0.468 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming calls created |        0                  |        1                 
+  Outgoing calls created |        0                  |        0                 
+  Total Calls created    |                           |        1                 
+  Current Calls          |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |        1                 
+  Failed call            |        0                  |        0                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:00:00:000000          
+------------------------------ Test Terminated --------------------------------

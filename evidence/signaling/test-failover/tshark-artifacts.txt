@@ -1,0 +1,4 @@
+mode=failover
+pcap=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test-failover/signaling.pcap
+summary=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test-failover/tshark-summary.tsv
+proof=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test-failover/tshark-proof.txt

@@ -1,0 +1,4 @@
+mode=cancel
+pcap=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test06-cancel/signaling.pcap
+summary=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test06-cancel/tshark-summary.tsv
+proof=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/test06-cancel/tshark-proof.txt

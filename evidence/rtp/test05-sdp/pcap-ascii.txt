@@ -1,0 +1,207 @@
+reading from file signaling.pcap, link-type EN10MB (Ethernet), snapshot length 262144
+02:17:29.637007 IP 10.10.10.20.5062 > 10.10.10.10.5060: SIP: INVITE sip:800@lab.local SIP/2.0
+E.....@.@.6.
+
+
+.
+
+
+
+......*JINVITE sip:800@lab.local SIP/2.0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:carrier@10.10.10.20:5062>
+Max-Forwards: 70
+P-Asserted-Identity: <sip:971501234567@etisalat.local>
+Content-Type: application/sdp
+Content-Length:   134
+
+v=0
+o=carrier 1 1 IN IP4 10.10.10.20
+s=Fake Carrier SDP
+c=IN IP4 10.10.10.20
+t=0 0
+m=audio 5064 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+02:17:29.638800 IP 10.10.10.10.5060 > 10.10.10.20.5062: SIP: SIP/2.0 100 trying -- your call is important to us
+E..:N...@...
+
+
+
+
+
+
+......&)iSIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 INVITE
+Server: kamailio (5.7.4 (x86_64/linux))
+Content-Length: 0
+
+
+02:17:29.638850 IP 10.10.10.10.5060 > 10.10.10.41.5070: SIP: INVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
+E....U..@..'
+
+
+
+
+
+
+)......+^INVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
+Record-Route: <sip:10.10.10.10;lr;ftag=1;did=1b7.478>
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK8e7c.e6fe8d36db9e0de39ba5c0bc70e51d29.0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-0
+From: <sip:971501234567@etisalat.local>;tag=1
+To: <sip:800@lab.local>
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:carrier@10.10.10.20:5062>
+Max-Forwards: 69
+P-Asserted-Identity: <sip:971501234567@etisalat.local>
+Content-Type: application/sdp
+Content-Length:   161
+X-Original-Caller: 971501234567
+X-Original_Caller: 971501234567
+
+v=0
+o=carrier 1 1 IN IP4 10.10.10.10
+s=Fake Carrier SDP
+c=IN IP4 10.10.10.10
+t=0 0
+m=audio 40036 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=sendrecv
+a=rtcp:40037
+
+02:17:29.638984 IP 10.10.10.41.5070 > 10.10.10.10.5060: SIP: SIP/2.0 100 Trying
+E..S.)@.@..*
+
+
+)
+
+
+
+.....?).SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK8e7c.e6fe8d36db9e0de39ba5c0bc70e51d29.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-0
+From: <sip:971501234567@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-sdp-541
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 INVITE
+Content-Length: 0
+
+
+02:17:29.640089 IP 10.10.10.41.5070 > 10.10.10.10.5060: SIP: SIP/2.0 180 Ringing
+E..z.*@.@...
+
+
+)
+
+
+
+.....f).SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK8e7c.e6fe8d36db9e0de39ba5c0bc70e51d29.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-0
+From: <sip:971501234567@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-sdp-541
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:vapi@10.10.10.41:5070>
+Content-Length: 0
+
+
+02:17:29.640232 IP 10.10.10.10.5060 > 10.10.10.20.5062: SIP: SIP/2.0 180 Ringing
+E..)N...@...
+
+
+
+
+
+
+.......)XSIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-sdp-541
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:vapi@10.10.10.41:5070>
+Content-Length: 0
+
+
+02:17:29.641270 IP 10.10.10.41.5070 > 10.10.10.10.5060: SIP: SIP/2.0 200 OK
+E....+@.@..c
+
+
+)
+
+
+
+......*\SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK8e7c.e6fe8d36db9e0de39ba5c0bc70e51d29.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-0
+From: <sip:971501234567@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-sdp-541
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:vapi@10.10.10.41:5070>
+Content-Type: application/sdp
+Content-Length:   128
+
+v=0
+o=vapi 1 1 IN IP4 10.10.10.41
+s=Fake Vapi SDP
+c=IN IP4 10.10.10.41
+t=0 0
+m=audio 7078 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+02:17:29.641769 IP 10.10.10.10.5060 > 10.10.10.20.5062: SIP: SIP/2.0 200 OK
+E...N...@...
+
+
+
+
+
+
+.......*.SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-0
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-sdp-541
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:vapi@10.10.10.41:5070>
+Content-Type: application/sdp
+Content-Length:   155
+
+v=0
+o=vapi 1 1 IN IP4 10.10.10.10
+s=Fake Vapi SDP
+c=IN IP4 10.10.10.10
+t=0 0
+m=audio 40070 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=sendrecv
+a=rtcp:40071
+
+02:17:29.641801 IP 10.10.10.20.5062 > 10.10.10.10.5060: SIP: ACK sip:800@lab.local SIP/2.0
+E..E..@.@.7.
+
+
+.
+
+
+
+.....1)tACK sip:800@lab.local SIP/2.0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-651-1-4
+From: <sip:0555123456@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-sdp-541
+Call-ID: 1-651@10.10.10.20
+CSeq: 1 ACK
+Contact: <sip:carrier@10.10.10.20:5062>
+Max-Forwards: 70
+Content-Length: 0
+
+

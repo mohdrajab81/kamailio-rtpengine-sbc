@@ -1,0 +1,4 @@
+mode=from-only
+pcap=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test02-from-only/signaling.pcap
+summary=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test02-from-only/tshark-summary.tsv
+proof=/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test02-from-only/tshark-proof.txt

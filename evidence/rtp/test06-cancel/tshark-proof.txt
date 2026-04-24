@@ -1,0 +1,1052 @@
+Frame 1: 560 bytes on wire (4480 bits), 560 bytes captured (4480 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.669034000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.669034000 UTC
+    Epoch Arrival Time: 1776986256.669034000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 560 bytes (4480 bits)
+    Capture Length: 560 bytes (4480 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip:sdp]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.20, Dst: 10.10.10.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 546
+    Identification: 0xdac4 (56004)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x35d5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.20
+    Destination Address: 10.10.10.10
+User Datagram Protocol, Src Port: 5062, Dst Port: 5060
+    Source Port: 5062
+    Destination Port: 5060
+    Length: 526
+    Checksum: 0x2a51 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (518 bytes)
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:800@lab.local SIP/2.0
+        Method: INVITE
+        Request-URI: sip:800@lab.local
+            Request-URI User Part: 800
+            Request-URI Host Part: lab.local
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-841-1-0
+            Transport: UDP
+            Sent-by Address: 10.10.10.20
+            Sent-by port: 5062
+            Branch: z9hG4bK-841-1-0
+        From: <sip:0555123456@etisalat.local>;tag=1
+            SIP from address: sip:0555123456@etisalat.local
+                SIP from address User Part: 0555123456
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 INVITE
+            Sequence Number: 1
+            Method: INVITE
+        Contact: <sip:carrier@10.10.10.20:5062>
+            Contact URI: sip:carrier@10.10.10.20:5062
+                Contact URI User Part: carrier
+                Contact URI Host Part: 10.10.10.20
+                Contact URI Host Port: 5062
+        Max-Forwards: 70
+        P-Asserted-Identity: <sip:971501234567@etisalat.local>
+            SIP PAI Address: sip:971501234567@etisalat.local
+                SIP PAI User Part: 971501234567
+                SIP PAI Host Part: etisalat.local
+        Content-Type: application/sdp
+        Content-Length:   141
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): carrier 1 1 IN IP4 10.10.10.20
+                Owner Username: carrier
+                Session ID: 1
+                Session Version: 1
+                Owner Network Type: IN
+                Owner Address Type: IP4
+                Owner Address: 10.10.10.20
+            Session Name (s): Fake Carrier SDP Cancel
+            Connection Information (c): IN IP4 10.10.10.20
+                Connection Network Type: IN
+                Connection Address Type: IP4
+                Connection Address: 10.10.10.20
+            Time Description, active time (t): 0 0
+                Session Start Time: 0
+                Session Stop Time: 0
+            Media Description, name and address (m): audio 5064 RTP/AVP 0
+                Media Type: audio
+                Media Port: 5064
+                Media Protocol: RTP/AVP
+                Media Format: ITU-T G.711 PCMU
+            Media Attribute (a): rtpmap:0 PCMU/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 0
+                MIME Type: PCMU
+                Sample Rate: 8000
+            [Generated Call-ID: 1-841@10.10.10.20]
+
+Frame 3: 816 bytes on wire (6528 bits), 816 bytes captured (6528 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.670365000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.670365000 UTC
+    Epoch Arrival Time: 1776986256.670365000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000106000 seconds]
+    [Time delta from previous displayed frame: 0.001331000 seconds]
+    [Time since reference or first frame: 0.001331000 seconds]
+    Frame Number: 3
+    Frame Length: 816 bytes (6528 bits)
+    Capture Length: 816 bytes (6528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip:sdp]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.41
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x10 (DSCP: Unknown, ECN: Not-ECT)
+        0001 00.. = Differentiated Services Codepoint: Unknown (4)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 802
+    Identification: 0xcf42 (53058)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x8032 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.10
+    Destination Address: 10.10.10.41
+User Datagram Protocol, Src Port: 5060, Dst Port: 5070
+    Source Port: 5060
+    Destination Port: 5070
+    Length: 782
+    Checksum: 0x2b66 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (774 bytes)
+Session Initiation Protocol (INVITE)
+    Request-Line: INVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
+        Method: INVITE
+        Request-URI: sip:+97145550123@localcred.sip.vapi.ai
+            Request-URI User Part: +97145550123
+            E.164 number (MSISDN): 97145550123
+                Country Code: United Arab Emirates (971)
+            Request-URI Host Part: localcred.sip.vapi.ai
+        [Resent Packet: False]
+    Message Header
+        Record-Route: <sip:10.10.10.10;lr;ftag=1;did=2f5.5da2>
+            Record-Route URI: sip:10.10.10.10;lr;ftag=1;did=2f5.5da2
+                Record-Route Host Part: 10.10.10.10
+                Record-Route URI parameter: lr
+                Record-Route URI parameter: ftag=1
+                Record-Route URI parameter: did=2f5.5da2
+        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+            Transport: UDP
+            Sent-by Address: 10.10.10.10
+            Branch: z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-841-1-0
+            Transport: UDP
+            Sent-by Address: 10.10.10.20
+            Sent-by port: 5062
+            Branch: z9hG4bK-841-1-0
+        From: <sip:971501234567@etisalat.local>;tag=1
+            SIP from address: sip:971501234567@etisalat.local
+                SIP from address User Part: 971501234567
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 INVITE
+            Sequence Number: 1
+            Method: INVITE
+        Contact: <sip:carrier@10.10.10.20:5062>
+            Contact URI: sip:carrier@10.10.10.20:5062
+                Contact URI User Part: carrier
+                Contact URI Host Part: 10.10.10.20
+                Contact URI Host Port: 5062
+        Max-Forwards: 69
+        P-Asserted-Identity: <sip:971501234567@etisalat.local>
+            SIP PAI Address: sip:971501234567@etisalat.local
+                SIP PAI User Part: 971501234567
+                SIP PAI Host Part: etisalat.local
+        Content-Type: application/sdp
+        Content-Length:   168
+        X-Original-Caller: 971501234567
+            [Expert Info (Note/Undecoded): Unrecognised SIP header (x-original-caller)]
+                [Unrecognised SIP header (x-original-caller)]
+                [Severity level: Note]
+                [Group: Undecoded]
+        X-Original_Caller: 971501234567
+            [Expert Info (Note/Undecoded): Unrecognised SIP header (x-original_caller)]
+                [Unrecognised SIP header (x-original_caller)]
+                [Severity level: Note]
+                [Group: Undecoded]
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version (v): 0
+            Owner/Creator, Session Id (o): carrier 1 1 IN IP4 10.10.10.10
+                Owner Username: carrier
+                Session ID: 1
+                Session Version: 1
+                Owner Network Type: IN
+                Owner Address Type: IP4
+                Owner Address: 10.10.10.10
+            Session Name (s): Fake Carrier SDP Cancel
+            Connection Information (c): IN IP4 10.10.10.10
+                Connection Network Type: IN
+                Connection Address Type: IP4
+                Connection Address: 10.10.10.10
+            Time Description, active time (t): 0 0
+                Session Start Time: 0
+                Session Stop Time: 0
+            Media Description, name and address (m): audio 40008 RTP/AVP 0
+                Media Type: audio
+                Media Port: 40008
+                Media Protocol: RTP/AVP
+                Media Format: ITU-T G.711 PCMU
+            Media Attribute (a): rtpmap:0 PCMU/8000
+                Media Attribute Fieldname: rtpmap
+                Media Format: 0
+                MIME Type: PCMU
+                Sample Rate: 8000
+            Media Attribute (a): sendrecv
+            Media Attribute (a): rtcp:40009
+                Media Attribute Fieldname: rtcp
+                Media Attribute Value: 40009
+            [Generated Call-ID: 1-841@10.10.10.20]
+
+Frame 5: 395 bytes on wire (3160 bits), 395 bytes captured (3160 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.671799000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.671799000 UTC
+    Epoch Arrival Time: 1776986256.671799000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001288000 seconds]
+    [Time delta from previous displayed frame: 0.001434000 seconds]
+    [Time since reference or first frame: 0.002765000 seconds]
+    Frame Number: 5
+    Frame Length: 395 bytes (3160 bits)
+    Capture Length: 395 bytes (3160 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.41, Dst: 10.10.10.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 381
+    Identification: 0xf3b8 (62392)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x1d71 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.41
+    Destination Address: 10.10.10.10
+User Datagram Protocol, Src Port: 5070, Dst Port: 5060
+    Source Port: 5070
+    Destination Port: 5060
+    Length: 361
+    Checksum: 0x29c1 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Timestamps]
+        [Time since first frame: 0.001434000 seconds]
+        [Time since previous frame: 0.001288000 seconds]
+    UDP payload (353 bytes)
+Session Initiation Protocol (180)
+    Status-Line: SIP/2.0 180 Ringing
+        Status-Code: 180
+        [Resent Packet: False]
+        [Request Frame: 3]
+        [Response Time (ms): 1]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-841-1-0
+            Transport: UDP
+            Sent-by Address: 10.10.10.10
+            Branch: z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+            Transport: UDP
+            Sent-by Address: 10.10.10.20
+            Sent-by port: 5062
+            Branch: z9hG4bK-841-1-0
+        From: <sip:971501234567@etisalat.local>;tag=1
+            SIP from address: sip:971501234567@etisalat.local
+                SIP from address User Part: 971501234567
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>;tag=vapi-cancel-732
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+            SIP to tag: vapi-cancel-732
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 INVITE
+            Sequence Number: 1
+            Method: INVITE
+        Contact: <sip:vapi@10.10.10.41:5070>
+            Contact URI: sip:vapi@10.10.10.41:5070
+                Contact URI User Part: vapi
+                Contact URI Host Part: 10.10.10.41
+                Contact URI Host Port: 5070
+        Content-Length: 0
+
+Frame 6: 314 bytes on wire (2512 bits), 314 bytes captured (2512 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.671926000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.671926000 UTC
+    Epoch Arrival Time: 1776986256.671926000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000127000 seconds]
+    [Time delta from previous displayed frame: 0.000127000 seconds]
+    [Time since reference or first frame: 0.002892000 seconds]
+    Frame Number: 6
+    Frame Length: 314 bytes (2512 bits)
+    Capture Length: 314 bytes (2512 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.20
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x10 (DSCP: Unknown, ECN: Not-ECT)
+        0001 00.. = Differentiated Services Codepoint: Unknown (4)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 300
+    Identification: 0x4f93 (20371)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x01ed [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.10
+    Destination Address: 10.10.10.20
+User Datagram Protocol, Src Port: 5060, Dst Port: 5062
+    Source Port: 5060
+    Destination Port: 5062
+    Length: 280
+    Checksum: 0x295b [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Timestamps]
+        [Time since first frame: 0.002892000 seconds]
+        [Time since previous frame: 0.001667000 seconds]
+    UDP payload (272 bytes)
+Session Initiation Protocol (180)
+    Status-Line: SIP/2.0 180 Ringing
+        Status-Code: 180
+        [Resent Packet: False]
+        [Request Frame: 1]
+        [Response Time (ms): 2]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-841-1-0
+            Transport: UDP
+            Sent-by Address: 10.10.10.20
+            Sent-by port: 5062
+            Branch: z9hG4bK-841-1-0
+        From: <sip:0555123456@etisalat.local>;tag=1
+            SIP from address: sip:0555123456@etisalat.local
+                SIP from address User Part: 0555123456
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>;tag=vapi-cancel-732
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+            SIP to tag: vapi-cancel-732
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 INVITE
+            Sequence Number: 1
+            Method: INVITE
+        Contact: <sip:vapi@10.10.10.41:5070>
+            Contact URI: sip:vapi@10.10.10.41:5070
+                Contact URI User Part: vapi
+                Contact URI Host Part: 10.10.10.41
+                Contact URI Host Port: 5070
+        Content-Length: 0
+
+Frame 7: 287 bytes on wire (2296 bits), 287 bytes captured (2296 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.671942000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.671942000 UTC
+    Epoch Arrival Time: 1776986256.671942000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000016000 seconds]
+    [Time delta from previous displayed frame: 0.000016000 seconds]
+    [Time since reference or first frame: 0.002908000 seconds]
+    Frame Number: 7
+    Frame Length: 287 bytes (2296 bits)
+    Capture Length: 287 bytes (2296 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.20, Dst: 10.10.10.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 273
+    Identification: 0xdac5 (56005)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x36e5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.20
+    Destination Address: 10.10.10.10
+User Datagram Protocol, Src Port: 5062, Dst Port: 5060
+    Source Port: 5062
+    Destination Port: 5060
+    Length: 253
+    Checksum: 0x2940 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Timestamps]
+        [Time since first frame: 0.002908000 seconds]
+        [Time since previous frame: 0.000016000 seconds]
+    UDP payload (245 bytes)
+Session Initiation Protocol (CANCEL)
+    Request-Line: CANCEL sip:800@lab.local SIP/2.0
+        Method: CANCEL
+        Request-URI: sip:800@lab.local
+            Request-URI User Part: 800
+            Request-URI Host Part: lab.local
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-841-1-3
+            Transport: UDP
+            Sent-by Address: 10.10.10.20
+            Sent-by port: 5062
+            Branch: z9hG4bK-841-1-3
+        From: <sip:0555123456@etisalat.local>;tag=1
+            SIP from address: sip:0555123456@etisalat.local
+                SIP from address User Part: 0555123456
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 CANCEL
+            Sequence Number: 1
+            Method: CANCEL
+        Max-Forwards: 70
+        Content-Length: 0
+
+Frame 8: 351 bytes on wire (2808 bits), 351 bytes captured (2808 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.689472000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.689472000 UTC
+    Epoch Arrival Time: 1776986256.689472000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.017530000 seconds]
+    [Time delta from previous displayed frame: 0.017530000 seconds]
+    [Time since reference or first frame: 0.020438000 seconds]
+    Frame Number: 8
+    Frame Length: 351 bytes (2808 bits)
+    Capture Length: 351 bytes (2808 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.20
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x10 (DSCP: Unknown, ECN: Not-ECT)
+        0001 00.. = Differentiated Services Codepoint: Unknown (4)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 337
+    Identification: 0x4f94 (20372)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x01c7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.10
+    Destination Address: 10.10.10.20
+User Datagram Protocol, Src Port: 5060, Dst Port: 5062
+    Source Port: 5060
+    Destination Port: 5062
+    Length: 317
+    Checksum: 0x2980 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Timestamps]
+        [Time since first frame: 0.020438000 seconds]
+        [Time since previous frame: 0.017530000 seconds]
+    UDP payload (309 bytes)
+Session Initiation Protocol (408)
+    Status-Line: SIP/2.0 408 Request Timeout
+        Status-Code: 408
+        [Resent Packet: False]
+        [Request Frame: 7]
+        [Response Time (ms): 17]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-841-1-0
+            Transport: UDP
+            Sent-by Address: 10.10.10.20
+            Sent-by port: 5062
+            Branch: z9hG4bK-841-1-0
+        From: <sip:0555123456@etisalat.local>;tag=1
+            SIP from address: sip:0555123456@etisalat.local
+                SIP from address User Part: 0555123456
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>;tag=f221321e2d822ffc02d8727b0bd0a266-e33ad0fd
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+            SIP to tag: f221321e2d822ffc02d8727b0bd0a266-e33ad0fd
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 INVITE
+            Sequence Number: 1
+            Method: INVITE
+        Server: kamailio (5.7.4 (x86_64/linux))
+        Content-Length: 0
+
+Frame 9: 336 bytes on wire (2688 bits), 336 bytes captured (2688 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.689492000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.689492000 UTC
+    Epoch Arrival Time: 1776986256.689492000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000020000 seconds]
+    [Time delta from previous displayed frame: 0.000020000 seconds]
+    [Time since reference or first frame: 0.020458000 seconds]
+    Frame Number: 9
+    Frame Length: 336 bytes (2688 bits)
+    Capture Length: 336 bytes (2688 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.41
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x10 (DSCP: Unknown, ECN: Not-ECT)
+        0001 00.. = Differentiated Services Codepoint: Unknown (4)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 322
+    Identification: 0xcf43 (53059)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x8211 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.10
+    Destination Address: 10.10.10.41
+User Datagram Protocol, Src Port: 5060, Dst Port: 5070
+    Source Port: 5060
+    Destination Port: 5070
+    Length: 302
+    Checksum: 0x2986 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Timestamps]
+        [Time since first frame: 0.019127000 seconds]
+        [Time since previous frame: 0.017693000 seconds]
+    UDP payload (294 bytes)
+Session Initiation Protocol (CANCEL)
+    Request-Line: CANCEL sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
+        Method: CANCEL
+        Request-URI: sip:+97145550123@localcred.sip.vapi.ai
+            Request-URI User Part: +97145550123
+            E.164 number (MSISDN): 97145550123
+                Country Code: United Arab Emirates (971)
+            Request-URI Host Part: localcred.sip.vapi.ai
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+            Transport: UDP
+            Sent-by Address: 10.10.10.10
+            Branch: z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+        From: <sip:971501234567@etisalat.local>;tag=1
+            SIP from address: sip:971501234567@etisalat.local
+                SIP from address User Part: 971501234567
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 CANCEL
+            Sequence Number: 1
+            Method: CANCEL
+        Max-Forwards: 69
+        Content-Length: 0
+
+Frame 10: 327 bytes on wire (2616 bits), 327 bytes captured (2616 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.689505000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.689505000 UTC
+    Epoch Arrival Time: 1776986256.689505000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000013000 seconds]
+    [Time delta from previous displayed frame: 0.000013000 seconds]
+    [Time since reference or first frame: 0.020471000 seconds]
+    Frame Number: 10
+    Frame Length: 327 bytes (2616 bits)
+    Capture Length: 327 bytes (2616 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.20, Dst: 10.10.10.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 313
+    Identification: 0xdac7 (56007)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x36bb [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.20
+    Destination Address: 10.10.10.10
+User Datagram Protocol, Src Port: 5062, Dst Port: 5060
+    Source Port: 5062
+    Destination Port: 5060
+    Length: 293
+    Checksum: 0x2968 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Timestamps]
+        [Time since first frame: 0.020471000 seconds]
+        [Time since previous frame: 0.000033000 seconds]
+    UDP payload (285 bytes)
+Session Initiation Protocol (ACK)
+    Request-Line: ACK sip:800@lab.local SIP/2.0
+        Method: ACK
+        Request-URI: sip:800@lab.local
+            Request-URI User Part: 800
+            Request-URI Host Part: lab.local
+        [Resent Packet: False]
+        [Request Frame: 7]
+        [Response Time (ms): 17]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-841-1-6
+            Transport: UDP
+            Sent-by Address: 10.10.10.20
+            Sent-by port: 5062
+            Branch: z9hG4bK-841-1-6
+        From: <sip:0555123456@etisalat.local>;tag=1
+            SIP from address: sip:0555123456@etisalat.local
+                SIP from address User Part: 0555123456
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>;tag=f221321e2d822ffc02d8727b0bd0a266-e33ad0fd
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+            SIP to tag: f221321e2d822ffc02d8727b0bd0a266-e33ad0fd
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 ACK
+            Sequence Number: 1
+            Method: ACK
+        Max-Forwards: 70
+        Content-Length: 0
+
+Frame 11: 299 bytes on wire (2392 bits), 299 bytes captured (2392 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.689577000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.689577000 UTC
+    Epoch Arrival Time: 1776986256.689577000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000072000 seconds]
+    [Time delta from previous displayed frame: 0.000072000 seconds]
+    [Time since reference or first frame: 0.020543000 seconds]
+    Frame Number: 11
+    Frame Length: 299 bytes (2392 bits)
+    Capture Length: 299 bytes (2392 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.41, Dst: 10.10.10.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 285
+    Identification: 0xf3b9 (62393)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x1dd0 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.41
+    Destination Address: 10.10.10.10
+User Datagram Protocol, Src Port: 5070, Dst Port: 5060
+    Source Port: 5070
+    Destination Port: 5060
+    Length: 265
+    Checksum: 0x2961 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Timestamps]
+        [Time since first frame: 0.019212000 seconds]
+        [Time since previous frame: 0.000085000 seconds]
+    UDP payload (257 bytes)
+Session Initiation Protocol (200)
+    Status-Line: SIP/2.0 200 OK
+        Status-Code: 200
+        [Resent Packet: False]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+            Transport: UDP
+            Sent-by Address: 10.10.10.10
+            Branch: z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+        From: <sip:971501234567@etisalat.local>;tag=1
+            SIP from address: sip:971501234567@etisalat.local
+                SIP from address User Part: 971501234567
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>;tag=vapi-cancel-732
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+            SIP to tag: vapi-cancel-732
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 CANCEL
+            Sequence Number: 1
+            Method: CANCEL
+        Content-Length: 0
+
+Frame 12: 315 bytes on wire (2520 bits), 315 bytes captured (2520 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.690774000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.690774000 UTC
+    Epoch Arrival Time: 1776986256.690774000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001197000 seconds]
+    [Time delta from previous displayed frame: 0.001197000 seconds]
+    [Time since reference or first frame: 0.021740000 seconds]
+    Frame Number: 12
+    Frame Length: 315 bytes (2520 bits)
+    Capture Length: 315 bytes (2520 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.41, Dst: 10.10.10.10
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 301
+    Identification: 0xf3ba (62394)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x1dbf [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.41
+    Destination Address: 10.10.10.10
+User Datagram Protocol, Src Port: 5070, Dst Port: 5060
+    Source Port: 5070
+    Destination Port: 5060
+    Length: 281
+    Checksum: 0x2971 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Timestamps]
+        [Time since first frame: 0.020409000 seconds]
+        [Time since previous frame: 0.001197000 seconds]
+    UDP payload (273 bytes)
+Session Initiation Protocol (487)
+    Status-Line: SIP/2.0 487 Request Terminated
+        Status-Code: 487
+        [Resent Packet: False]
+        [Request Frame: 9]
+        [Response Time (ms): 1]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+            Transport: UDP
+            Sent-by Address: 10.10.10.10
+            Branch: z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+        From: <sip:971501234567@etisalat.local>;tag=1
+            SIP from address: sip:971501234567@etisalat.local
+                SIP from address User Part: 971501234567
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>;tag=vapi-cancel-732
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+            SIP to tag: vapi-cancel-732
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 INVITE
+            Sequence Number: 1
+            Method: INVITE
+        Content-Length: 0
+
+Frame 13: 350 bytes on wire (2800 bits), 350 bytes captured (2800 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 24, 2026 02:17:36.690877000 +03
+    UTC Arrival Time: Apr 23, 2026 23:17:36.690877000 UTC
+    Epoch Arrival Time: 1776986256.690877000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000103000 seconds]
+    [Time delta from previous displayed frame: 0.000103000 seconds]
+    [Time since reference or first frame: 0.021843000 seconds]
+    Frame Number: 13
+    Frame Length: 350 bytes (2800 bits)
+    Capture Length: 350 bytes (2800 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:sip]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.41
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x10 (DSCP: Unknown, ECN: Not-ECT)
+        0001 00.. = Differentiated Services Codepoint: Unknown (4)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 336
+    Identification: 0xcf44 (53060)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x8202 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.10.10.10
+    Destination Address: 10.10.10.41
+User Datagram Protocol, Src Port: 5060, Dst Port: 5070
+    Source Port: 5060
+    Destination Port: 5070
+    Length: 316
+    Checksum: 0x2994 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 1]
+    [Timestamps]
+        [Time since first frame: 0.020512000 seconds]
+        [Time since previous frame: 0.000103000 seconds]
+    UDP payload (308 bytes)
+Session Initiation Protocol (ACK)
+    Request-Line: ACK sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
+        Method: ACK
+        Request-URI: sip:+97145550123@localcred.sip.vapi.ai
+            Request-URI User Part: +97145550123
+            E.164 number (MSISDN): 97145550123
+                Country Code: United Arab Emirates (971)
+            Request-URI Host Part: localcred.sip.vapi.ai
+        [Resent Packet: False]
+        [Request Frame: 9]
+        [Response Time (ms): 1]
+    Message Header
+        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+            Transport: UDP
+            Sent-by Address: 10.10.10.10
+            Branch: z9hG4bK926d.f804ffff9dcdf5c274e3e9cc6a5cbde1.0
+        From: <sip:971501234567@etisalat.local>;tag=1
+            SIP from address: sip:971501234567@etisalat.local
+                SIP from address User Part: 971501234567
+                SIP from address Host Part: etisalat.local
+            SIP from tag: 1
+        To: <sip:800@lab.local>;tag=vapi-cancel-732
+            SIP to address: sip:800@lab.local
+                SIP to address User Part: 800
+                SIP to address Host Part: lab.local
+            SIP to tag: vapi-cancel-732
+        Call-ID: 1-841@10.10.10.20
+        [Generated Call-ID: 1-841@10.10.10.20]
+        CSeq: 1 ACK
+            Sequence Number: 1
+            Method: ACK
+        Max-Forwards: 69
+        Content-Length: 0
+

@@ -1,0 +1,169 @@
+reading from file signaling.pcap, link-type EN10MB (Ethernet), snapshot length 262144
+02:17:04.252995 IP 10.10.10.20.5062 > 10.10.10.10.5060: SIP: INVITE sip:800@lab.local SIP/2.0
+E..<.Z@.@.H%
+
+
+.
+
+
+
+.....()kINVITE sip:800@lab.local SIP/2.0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-0
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:carrier@10.10.10.20:5062>
+Max-Forwards: 70
+Content-Length: 0
+
+
+02:17:04.253505 IP 10.10.10.10.5060 > 10.10.10.20.5062: SIP: SIP/2.0 100 trying -- your call is important to us
+E..<@a..@...
+
+
+
+
+
+
+......()kSIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-0
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 INVITE
+Server: kamailio (5.7.4 (x86_64/linux))
+Content-Length: 0
+
+
+02:17:04.253553 IP 10.10.10.10.5060 > 10.10.10.41.5070: SIP: INVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
+E....!..@..c
+
+
+
+
+
+
+)......*VINVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
+Record-Route: <sip:10.10.10.10;lr;ftag=1>
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK80bb.a38c4b358358a1aaf08b6b878c70df10.0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-0
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:carrier@10.10.10.20:5062>
+Max-Forwards: 69
+Content-Length: 0
+X-Original-Caller: 971509876543
+X-Original_Caller: 971509876543
+
+
+02:17:04.253764 IP 10.10.10.41.5070 > 10.10.10.10.5060: SIP: SIP/2.0 100 Trying
+E..R..@.@.#.
+
+
+)
+
+
+
+.....>).SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK80bb.a38c4b358358a1aaf08b6b878c70df10.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-0
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-ok-170
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 INVITE
+Content-Length: 0
+
+
+02:17:04.255012 IP 10.10.10.41.5070 > 10.10.10.10.5060: SIP: SIP/2.0 180 Ringing
+E..y..@.@.#.
+
+
+)
+
+
+
+.....e).SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK80bb.a38c4b358358a1aaf08b6b878c70df10.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-0
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-ok-170
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:vapi@10.10.10.41:5070>
+Content-Length: 0
+
+
+02:17:04.255151 IP 10.10.10.10.5060 > 10.10.10.20.5062: SIP: SIP/2.0 180 Ringing
+E..*@b..@.. 
+
+
+
+
+
+
+.......)YSIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-0
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-ok-170
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:vapi@10.10.10.41:5070>
+Content-Length: 0
+
+
+02:17:04.256130 IP 10.10.10.41.5070 > 10.10.10.10.5060: SIP: SIP/2.0 200 OK
+E..t..@.@.#.
+
+
+)
+
+
+
+.....`).SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK80bb.a38c4b358358a1aaf08b6b878c70df10.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-0
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-ok-170
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:vapi@10.10.10.41:5070>
+Content-Length: 0
+
+
+02:17:04.256301 IP 10.10.10.10.5060 > 10.10.10.20.5062: SIP: SIP/2.0 200 OK
+E..%@c..@..$
+
+
+
+
+
+
+.......)TSIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-0
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-ok-170
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 INVITE
+Contact: <sip:vapi@10.10.10.41:5070>
+Content-Length: 0
+
+
+02:17:04.256318 IP 10.10.10.20.5062 > 10.10.10.10.5060: SIP: ACK sip:800@lab.local SIP/2.0
+E..F.[@.@.H.
+
+
+.
+
+
+
+.....2)uACK sip:800@lab.local SIP/2.0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-186-1-4
+From: <sip:971509876543@etisalat.local>;tag=1
+To: <sip:800@lab.local>;tag=vapi-ok-170
+Call-ID: 1-186@10.10.10.20
+CSeq: 1 ACK
+Contact: <sip:carrier@10.10.10.20:5062>
+Max-Forwards: 70
+Content-Length: 0
+
+

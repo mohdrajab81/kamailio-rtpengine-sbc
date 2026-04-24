@@ -1,0 +1,527 @@
+ 0(149) DEBUG: <core> [core/cfg.lex:2272]: pp_define_get(): ### returning define ID [LAB_SBC_IP] value ["10.10.10.10"]
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module sl.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3334]: sr_kemi_modules_add(): adding core module
+ 0(149) DEBUG: <core> [core/kemi.c:3338]: sr_kemi_modules_add(): adding pv module
+ 0(149) DEBUG: <core> [core/kemi.c:3342]: sr_kemi_modules_add(): adding hdr module
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: sl
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: sl
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_sl
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module tm.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: tm
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_tm
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module rr.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/rr.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/rr.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: rr
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: rr
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_rr
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module maxfwd.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/maxfwd.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/maxfwd.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: maxfwd
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_maxfwd
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module sanity.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/sanity.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/sanity.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: sanity
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_sanity
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module textops.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: textops
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_textops
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module siputils.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/siputils.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/siputils.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: siputils
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: siputils
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_siputils
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module pv.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/pv.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/pv.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: pvx
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: pv
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_pv
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module xlog.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: xlog
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: xlog
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_xlog
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module dispatcher.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: dispatcher
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: dispatcher
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_dispatcher
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module dialog.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/dialog.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/dialog.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: dialog
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: dialog
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_dialog
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module uac.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/uac.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/uac.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: uac
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: uac
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_uac
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module rtpengine.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: rtpengine
+ 0(149) DEBUG: <core> [core/sr_module.c:298]: register_module(): register PV from: rtpengine
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_rtpengine
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module pike.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so>
+ 0(149) DEBUG: <core> [core/kemi.c:3357]: sr_kemi_modules_add(): adding module: pike
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_pike
+ 0(149) DEBUG: <core> [core/cfg.y:2068]: yyparse(): loading module ctl.so
+ 0(149) DEBUG: <core> [core/sr_module.c:524]: ksr_locate_module(): found module to load </usr/lib/x86_64-linux-gnu/kamailio/modules/ctl.so>
+ 0(149) DEBUG: <core> [core/sr_module.c:581]: ksr_load_module(): trying to load </usr/lib/x86_64-linux-gnu/kamailio/modules/ctl.so>
+ 0(149) DEBUG: <core> [core/cfg.lex:2085]: pp_define(): defining id: MOD_ctl
+ 0(149) DEBUG: <core> [core/mem/shm.c:101]: shm_core_pools_init(): preparing to initialize shm core pools
+ 0(149) DEBUG: <core> [core/mem/q_malloc.c:201]: qm_malloc_init(): QM_OPTIMIZE=16384, /ROUNDTO=2048
+ 0(149) DEBUG: <core> [core/mem/q_malloc.c:203]: qm_malloc_init(): QM_HASH_SIZE=2099, qm_block size=235152
+ 0(149) DEBUG: <core> [core/mem/q_malloc.c:205]: qm_malloc_init(): qm_malloc_init(0x70240f9ed000, 67108864), start=0x70240f9ed000
+ 0(149) DEBUG: <core> [core/mem/q_malloc.c:216]: qm_malloc_init(): size= 67108864, init_overhead=235256
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'ctl' matches module 'ctl'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <binrpc> in module ctl [/usr/lib/x86_64-linux-gnu/kamailio/modules/ctl.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <binrpc> in module ctl [/usr/lib/x86_64-linux-gnu/kamailio/modules/ctl.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'rr' matches module 'rr'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <append_fromtag> in module rr [/usr/lib/x86_64-linux-gnu/kamailio/modules/rr.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <append_fromtag> in module rr [/usr/lib/x86_64-linux-gnu/kamailio/modules/rr.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'tm' matches module 'tm'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <fr_timer> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <fr_timer> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'tm' matches module 'tm'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <fr_inv_timer> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <fr_inv_timer> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'dispatcher' matches module 'dispatcher'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <list_file> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <list_file> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'dispatcher' matches module 'dispatcher'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <flags> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <flags> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'dispatcher' matches module 'dispatcher'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <xavp_dst> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <xavp_dst> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'dispatcher' matches module 'dispatcher'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <ds_ping_interval> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <ds_ping_interval> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'dispatcher' matches module 'dispatcher'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <force_dst> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <force_dst> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'uac' matches module 'uac'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <restore_mode> in module uac [/usr/lib/x86_64-linux-gnu/kamailio/modules/uac.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <restore_mode> in module uac [/usr/lib/x86_64-linux-gnu/kamailio/modules/uac.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'uac' matches module 'uac'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <restore_dlg> in module uac [/usr/lib/x86_64-linux-gnu/kamailio/modules/uac.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <restore_dlg> in module uac [/usr/lib/x86_64-linux-gnu/kamailio/modules/uac.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'rtpengine' matches module 'rtpengine'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <rtpengine_sock> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <rtpengine_sock> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'rtpengine' matches module 'rtpengine'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <rtpengine_disable_tout> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <rtpengine_disable_tout> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'rtpengine' matches module 'rtpengine'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <aggressive_redetection> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <aggressive_redetection> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'rtpengine' matches module 'rtpengine'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <rtpengine_tout_ms> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <rtpengine_tout_ms> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'rtpengine' matches module 'rtpengine'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <rtpengine_retr> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <rtpengine_retr> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'pike' matches module 'pike'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <sampling_time_unit> in module pike [/usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <sampling_time_unit> in module pike [/usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'pike' matches module 'pike'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <reqs_density_per_unit> in module pike [/usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <reqs_density_per_unit> in module pike [/usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so]
+ 0(149) DEBUG: <core> [core/modparam.c:112]: set_mod_param_regex(): 'pike' matches module 'pike'
+ 0(149) DEBUG: <core> [core/sr_module.c:844]: find_param_export(): found <remove_latency> in module pike [/usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so]
+ 0(149) DEBUG: <core> [core/modparam.c:135]: set_mod_param_regex(): found <remove_latency> in module pike [/usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <mf_process_maxfwd_header> in module maxfwd [/usr/lib/x86_64-linux-gnu/kamailio/modules/maxfwd.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ea4390
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ea30b0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sanity_check> in module sanity [/usr/lib/x86_64-linux-gnu/kamailio/modules/sanity.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ea6b18
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ea7330
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <pike_check_req> in module pike [/usr/lib/x86_64-linux-gnu/kamailio/modules/pike.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ea8608
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ea7ba0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <is_method> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ea9ed8
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ea9c68
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <has_totag> in module siputils [/usr/lib/x86_64-linux-gnu/kamailio/modules/siputils.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <loose_route> in module rr [/usr/lib/x86_64-linux-gnu/kamailio/modules/rr.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <is_method> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <rtpengine_delete> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eac168
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eaca60
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type5, i/count 0/1: type 1(1)/ data 0x702413ead0b0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eab718
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eacf60
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <is_method> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_check_trans> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type5, i/count 0/1: type 1(1)/ data 0x702413eaebb0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eae480
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eaec98
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eadd50
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eaef38
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eaaf08
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ead520
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/pvapi.c:320]: pv_cache_add(): PV cache not initialized, doing it now
+ 0(149) DEBUG: <core> [core/pvapi.c:354]: pv_cache_add(): pvar [$si] added in cache
+ 0(149) DEBUG: <core> [core/cfg.lex:2272]: pp_define_get(): ### returning define ID [FAKE_ETISALAT_IP] value ["10.10.10.20"]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eb0da8
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eb14d8
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <is_method> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <rtpengine_delete> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_check_trans> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_relay> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eb3798
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eb3fd8
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eb2768
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eb24e8
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <is_method> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eb4ef0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eb5708
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <record_route> in module rr [/usr/lib/x86_64-linux-gnu/kamailio/modules/rr.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type5, i/count 0/1: type 1(1)/ data 0x702413eb5e98
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/pvapi.c:354]: pv_cache_add(): pvar [$var(ani)] added in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:354]: pv_cache_add(): pvar [$null] added in cache
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 0/2: type 21(15)/ data 0x702413eb6668
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 1/2: type 22(16)/ data 0x702413eb6978
+ 0(149) DEBUG: <core> [core/pvapi.c:354]: pv_cache_add(): pvar [$ai] added in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$null] found in cache
+ 0(149) DEBUG: <core> [core/cfg.y:3260]: yyparse(): comparison with $null switched to notdefined operator
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$ai] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(ani)] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:354]: pv_cache_add(): pvar [$(ai{uri.user})] added in cache
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 0/2: type 21(15)/ data 0x702413eb7f08
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 1/2: type 22(16)/ data 0x702413eba700
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eb9fd0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ebae30
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(ani)] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$null] found in cache
+ 0(149) DEBUG: <core> [core/cfg.y:3263]: yyparse(): comparison with $null switched to defined operator
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(ani)] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(ani)] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:354]: pv_cache_add(): pvar [$fU] added in cache
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 0/2: type 21(15)/ data 0x702413ebbc10
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 1/2: type 22(16)/ data 0x702413ebe408
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ebdcd8
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ebbe70
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(ani)] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$null] found in cache
+ 0(149) DEBUG: <core> [core/cfg.y:3263]: yyparse(): comparison with $null switched to defined operator
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(ani)] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(ani)] found in cache
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 0/2: type 21(15)/ data 0x702413ebf8b0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 1/2: type 22(16)/ data 0x702413ec20a8
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ec1978
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ebfa98
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <append_hf> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <append_hf> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$ai] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$null] found in cache
+ 0(149) DEBUG: <core> [core/cfg.y:3260]: yyparse(): comparison with $null switched to notdefined operator
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$ai] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$(ai{uri.user})] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$(ai{uri.user})] found in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$fU] found in cache
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <dlg_manage> in module dialog [/usr/lib/x86_64-linux-gnu/kamailio/modules/dialog.so]
+ 0(149) DEBUG: <core> [core/pvapi.c:354]: pv_cache_add(): pvar [$var(new_from_uri)] added in cache
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(ani)] found in cache
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 0/2: type 21(15)/ data 0x702413eca838
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 1/2: type 22(16)/ data 0x702413ecc928
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/pvapi.c:378]: pv_cache_lookup(): pvar [$var(new_from_uri)] found in cache
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <uac_replace_from> in module uac [/usr/lib/x86_64-linux-gnu/kamailio/modules/uac.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ec9c58
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413eca470
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/pvapi.c:354]: pv_cache_add(): pvar [$ru] added in cache
+ 0(149) DEBUG: <core> [core/cfg.lex:2272]: pp_define_get(): ### returning define ID [LAB_VAPI_DID] value ["+97145550123"]
+ 0(149) DEBUG: <core> [core/cfg.lex:2272]: pp_define_get(): ### returning define ID [LAB_VAPI_CREDENTIAL_ID] value ["localcred"]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 0/2: type 21(15)/ data 0x702413eceb58
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type63, i/count 1/2: type 22(16)/ data 0x702413ed2e58
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <ds_select_dst> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ed4280
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ed3bc0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <has_body> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <rtpengine_offer> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_send_reply> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ed7ff0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ed6da0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ed60f0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ed5e00
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_on_reply> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_on_failure> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type5, i/count 0/1: type 1(1)/ data 0x702413ed9590
+ 0(149) DEBUG: <core> [core/route.c:129]: route_add(): mapping routing block (0x631e6923f7a0)[TO_VAPI] to 1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_relay> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <sl_reply_error> in module sl [/usr/lib/x86_64-linux-gnu/kamailio/modules/sl.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413eda328
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413edab40
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route.c:129]: route_add(): mapping routing block (0x631e6923f7a0)[RELAY] to 2
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <has_body> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <rtpengine_answer> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413edf1e0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ede0a0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413edd200
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413edd930
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route.c:129]: route_add(): mapping routing block (0x631e692752c0)[VAPI_REPLY] to 1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_is_canceled> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ee0210
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ee0a40
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_check_status> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <ds_mark_dst> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <ds_next_dst> in module dispatcher [/usr/lib/x86_64-linux-gnu/kamailio/modules/dispatcher.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <has_body> in module textops [/usr/lib/x86_64-linux-gnu/kamailio/modules/textops.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <rtpengine_delete> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <rtpengine_offer> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ee5188
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ee59a0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ee2eb8
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ee37c0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_on_reply> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <t_on_failure> in module tm [/usr/lib/x86_64-linux-gnu/kamailio/modules/tm.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type5, i/count 0/1: type 1(1)/ data 0x702413ee6960
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 0/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type2, i/count 1/2: type 3(3)/ data 0x1
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ee2358
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ee5ff0
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <xlog> in module xlog [/usr/lib/x86_64-linux-gnu/kamailio/modules/xlog.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 0/2: type 9(9)/ data (nil)
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type24, i/count 1/2: type 3(3)/ data (nil)
+ 0(149) DEBUG: <core> [core/sr_module.c:752]: find_mod_export_record(): found export of <rtpengine_delete> in module rtpengine [/usr/lib/x86_64-linux-gnu/kamailio/modules/rtpengine.so]
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 0/3: type 22(16)/ data 0x702413ee1000
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 1/3: type 8(8)/ data 0x702413ee1908
+ 0(149) DEBUG: <core> [core/route_struct.c:128]: mk_action(): ACTION type16, i/count 2/3: type 0(0)/ data (nil)
+ 0(149) DEBUG: <core> [core/route.c:129]: route_add(): mapping routing block (0x631e69277720)[VAPI_FAILOVER] to 1
+ 0(149) DEBUG: <core> [core/ppcfg.c:266]: pp_ifdef_level_check(): same number of pairing preprocessor directives #!IF[N]DEF - #!ENDIF
+ 0(149) DEBUG: <core> [core/route.c:129]: route_add(): mapping routing block (0x631e692421c0)[core:receive-parse-error] to 1
+ 0(149) INFO: <core> [core/sctp_core.c:74]: sctp_core_check_support(): SCTP API not enabled - if you want to use it, load sctp module
+ 0(149) DEBUG: <core> [core/socket_info.c:832]: ksr_sockets_index(): number of listen sockets: 0
+WARNING: no fork mode 
+config file ok, exiting...
+Listening on 
+             udp: 10.10.10.10 [10.10.10.10]:5060
+Aliases: 
+

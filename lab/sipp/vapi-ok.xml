@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<scenario name="Fake Vapi OK">
+  <recv request="INVITE" crlf="true"/>
+
+  <send>
+    <![CDATA[
+SIP/2.0 100 Trying
+[last_Via:]
+[last_From:]
+[last_To:];tag=vapi-ok-[pid]
+[last_Call-ID:]
+[last_CSeq:]
+Content-Length: 0
+
+    ]]>
+  </send>
+
+  <send>
+    <![CDATA[
+SIP/2.0 180 Ringing
+[last_Via:]
+[last_From:]
+[last_To:];tag=vapi-ok-[pid]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:vapi@[local_ip]:[local_port]>
+Content-Length: 0
+
+    ]]>
+  </send>
+
+  <send>
+    <![CDATA[
+SIP/2.0 200 OK
+[last_Via:]
+[last_From:]
+[last_To:];tag=vapi-ok-[pid]
+[last_Call-ID:]
+[last_CSeq:]
+Contact: <sip:vapi@[local_ip]:[local_port]>
+Content-Length: 0
+
+    ]]>
+  </send>
+
+  <pause milliseconds="1500"/>
+</scenario>

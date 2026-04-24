@@ -1,0 +1,10 @@
+ii  kamailio                             5.7.4-1build7                           amd64        very fast, dynamic and configurable SIP server
+ii  kamailio-extra-modules:amd64         5.7.4-1build7                           amd64        Extra modules for the Kamailio SIP Server
+ii  kamailio-utils-modules:amd64         5.7.4-1build7                           amd64        Utility functions for the Kamailio SIP server
+ii  rtpengine-daemon                     11.5.1.18-1ubuntu1.2                    amd64        proxy for RTP and media streams used in NGCP, userspace part
+ii  rtpengine-perftest                   11.5.1.18-1ubuntu1.2                    amd64        helper tool to test rtpengine transcoding performance
+ii  rtpengine-perftest-data              11.5.1.18-1ubuntu1.2                    all          helper tool to test rtpengine transcoding performance - data files
+ii  rtpengine-recording-daemon           11.5.1.18-1ubuntu1.2                    amd64        recording daemon for RTP and media streams
+ii  rtpengine-utils                      11.5.1.18-1ubuntu1.2                    all          scripts and Perl modules for NGCP rtpengine
+ii  sip-tester                           1:3.7.2-1build3                         amd64        Performance testing tool for the SIP protocol
+ii  sngrep                               1.8.0-1build2                           amd64        Ncurses SIP Messages flow viewer
