@@ -16,7 +16,7 @@ from reportlab.platypus import (
 )
 
 
-ROOT = Path(r"C:\Users\DELL\Downloads\sip-lab-wsl2")
+ROOT = Path(r"C:\Projects\kamailio-rtpengine-sbc")
 OUT = ROOT / "docs" / "Kamailio-Etisalat-Vapi-Lab-Evidence.pdf"
 
 

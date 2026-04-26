@@ -4,7 +4,7 @@ set -euo pipefail
 TEST_NAME="test06-cancel"
 LAB_ROOT="$HOME/sip-lab"
 TEST_DIR="$LAB_ROOT/run/$TEST_NAME"
-ART_DIR="/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/rtp/$TEST_NAME"
+ART_DIR="/mnt/c/Projects/kamailio-rtpengine-sbc/evidence/rtp/$TEST_NAME"
 DISPATCHER_FILE="$LAB_ROOT/kamailio/dispatcher.list"
 DISPATCHER_BACKUP="$TEST_DIR/dispatcher.list.bak"
 

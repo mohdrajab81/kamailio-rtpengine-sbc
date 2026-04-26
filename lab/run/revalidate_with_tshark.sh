@@ -2,7 +2,7 @@
 set -euo pipefail
 
 LAB_ROOT="$HOME/sip-lab"
-EVID_ROOT="/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence"
+EVID_ROOT="/mnt/c/Projects/kamailio-rtpengine-sbc/evidence"
 TOOL="$LAB_ROOT/tools/write_tshark_views.sh"
 
 run_signaling_test() {

@@ -4,7 +4,7 @@ set -euo pipefail
 TEST_NAME="test-failover"
 LAB_ROOT="$HOME/sip-lab"
 TEST_DIR="$LAB_ROOT/run/$TEST_NAME"
-ART_DIR="/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/$TEST_NAME"
+ART_DIR="/mnt/c/Projects/kamailio-rtpengine-sbc/evidence/signaling/$TEST_NAME"
 
 mkdir -p "$TEST_DIR" "$ART_DIR"
 cd "$TEST_DIR"

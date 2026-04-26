@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SRC="/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/lab"
+SRC="/mnt/c/Projects/kamailio-rtpengine-sbc/lab"
 DST="$HOME/sip-lab"
 
 mkdir -p "$DST/kamailio" "$DST/sipp" "$DST/tools" "$DST/run"
