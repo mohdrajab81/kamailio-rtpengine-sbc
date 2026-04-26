@@ -49,7 +49,7 @@ evidence/
 
 ```bash
 # Sync lab files from Windows into WSL runtime workspace
-bash /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/lab/tools/sync_lab_to_wsl.sh
+bash /mnt/c/Projects/kamailio-rtpengine-sbc/lab/tools/sync_lab_to_wsl.sh
 
 # Verify Kamailio config syntax
 kamailio -c -f ~/sip-lab/kamailio/kamailio-lab.cfg

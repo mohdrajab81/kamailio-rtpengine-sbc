@@ -1,9 +1,9 @@
 Resolving remote host '10.10.10.10'... Done.
-2026-04-24	21:44:55.867967	1777056295.867967: Aborting call on unexpected message for Call-Id '100-364@10.10.10.20': while expecting '100' (index 1), received 'SIP/2.0 503 Rate Limit Exceeded
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-364-100-0
+2026-04-26	18:10:22.713308	1777216222.713308: Aborting call on unexpected message for Call-Id '100-370@10.10.10.20': while expecting '100' (index 1), received 'SIP/2.0 503 Rate Limit Exceeded
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-370-100-0
 From: <sip:0555123456@etisalat.local>;tag=100
-To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.38c017d1
-Call-ID: 100-364@10.10.10.20
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.a42ef257
+Call-ID: 100-370@10.10.10.20
 CSeq: 1 INVITE
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
@@ -24,15 +24,15 @@ There were more errors, see 'carrier_errors.log' file
                                  Messages  Retrans   Timeout   Unexpected-Msg
 0 :      INVITE ---------->         100       0         0                      
 1 :         100 <----------         13        0         0         87           
-2 :         180 <----------         14        0         0         0            
+2 :         180 <----------         13        0         0         0            
 3 :         200 <----------         13        0         0         0            
 4 :         ACK ---------->         13        0                                
 5 :       Pause [   1000ms]         13                            0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-24	21:44:53.863758	1777056293.863758         
-  Last Reset Time        | 2026-04-24	21:44:55.868027	1777056295.868027         
-  Current Time           | 2026-04-24	21:44:55.868054	1777056295.868054         
+  Start Time             | 2026-04-26	18:10:20.708926	1777216220.708926         
+  Last Reset Time        | 2026-04-26	18:10:22.713375	1777216222.713375         
+  Current Time           | 2026-04-26	18:10:22.713436	1777216222.713436         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------

@@ -1,9 +1,9 @@
 Resolving remote host '10.10.10.10'... Done.
-2026-04-24	21:44:49.480387	1777056289.480387: Aborting call on unexpected message for Call-Id '1-274@10.10.10.99': while expecting '100' (index 1), received 'SIP/2.0 403 Forbidden
-Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-274-1-0
+2026-04-26	18:10:16.293684	1777216216.293684: Aborting call on unexpected message for Call-Id '1-280@10.10.10.99': while expecting '100' (index 1), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-280-1-0
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.5111a3e0
-Call-ID: 1-274@10.10.10.99
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.c810a678
+Call-ID: 1-280@10.10.10.99
 CSeq: 1 INVITE
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
@@ -29,9 +29,9 @@ Content-Length: 0
 5 :       Pause [   1000ms]         0                             0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-24	21:44:49.378249	1777056289.378249         
-  Last Reset Time        | 2026-04-24	21:44:49.480528	1777056289.480528         
-  Current Time           | 2026-04-24	21:44:49.480546	1777056289.480546         
+  Start Time             | 2026-04-26	18:10:16.190855	1777216216.190855         
+  Last Reset Time        | 2026-04-26	18:10:16.293780	1777216216.293780         
+  Current Time           | 2026-04-26	18:10:16.293809	1777216216.293809         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------

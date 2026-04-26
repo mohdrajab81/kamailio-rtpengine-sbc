@@ -1,7 +1,7 @@
-2026-04-24	21:44:37.741857	1777056277.741857: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
+2026-04-26	18:10:04.479410	1777216204.479410: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
 ------------------------------ Scenario Screen -------- [1-9]: Change Screen --
   Port   Total-time  Total-calls  Transport
-  5070       3.60 s            1  UDP
+  5070       3.59 s            1  UDP
 
   Call limit 1 hit, 0.0 s period          0 ms scheduler resolution            
   0 calls                                 Peak was 1 calls, after 2 s
@@ -19,14 +19,14 @@
 4 :  [   1500ms] Pause              1                             0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-24	21:44:34.135082	1777056274.135082         
-  Last Reset Time        | 2026-04-24	21:44:37.742054	1777056277.742054         
-  Current Time           | 2026-04-24	21:44:37.742101	1777056277.742101         
+  Start Time             | 2026-04-26	18:10:00.884380	1777216200.884380         
+  Last Reset Time        | 2026-04-26	18:10:04.479666	1777216204.479666         
+  Current Time           | 2026-04-26	18:10:04.479736	1777216204.479736         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------
   Elapsed Time           | 00:00:00:000000           | 00:00:00:000000          
-  Call Rate              |    0.000 cps              |    0.277 cps             
+  Call Rate              |    0.000 cps              |    0.278 cps             
 -------------------------+---------------------------+--------------------------
   Incoming calls created |        0                  |        1                 
   Outgoing calls created |        0                  |        0                 

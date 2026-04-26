@@ -36,10 +36,10 @@ Two locations are used intentionally:
 | Location | Purpose |
 |---|---|
 | `/home/dev/sip-lab` | WSL runtime workspace — Kamailio, SIPp, and run scripts work reliably here |
-| `/mnt/c/Users/DELL/Downloads/sip-lab-wsl2` | Windows-visible root — configs, evidence, and docs stay accessible from Windows |
+| `/mnt/c/Projects/kamailio-rtpengine-sbc` | Windows-visible root — configs, evidence, and docs stay accessible from Windows |
 
-Lab source files live under `sip-lab-wsl2/lab/`. Evidence artifacts are written under
-`sip-lab-wsl2/evidence/`. The run scripts copy their output to both locations.
+Lab source files live under `kamailio-rtpengine-sbc/lab/`. Evidence artifacts are written under
+`kamailio-rtpengine-sbc/evidence/`. The run scripts copy their output to both locations.
 
 ## Lab Topology
 
@@ -143,7 +143,7 @@ Package notes:
 Run from WSL:
 
 ```bash
-bash /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/lab/tools/sync_lab_to_wsl.sh
+bash /mnt/c/Projects/kamailio-rtpengine-sbc/lab/tools/sync_lab_to_wsl.sh
 ```
 
 This copies the lab configs, SIPp scenarios, and scripts into `~/sip-lab`.

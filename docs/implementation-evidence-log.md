@@ -11,10 +11,10 @@ This document records the useful outputs, decisions, corrections, and artifacts 
 
 ## Artifact Roots
 
-- Windows docs: `C:\Users\DELL\Downloads\sip-lab-wsl2\docs`
-- Windows evidence: `C:\Users\DELL\Downloads\sip-lab-wsl2\evidence`
+- Windows docs: `C:\Projects\kamailio-rtpengine-sbc\docs`
+- Windows evidence: `C:\Projects\kamailio-rtpengine-sbc\evidence`
 - WSL runtime: `/home/dev/sip-lab`
-- WSL evidence mirror: `/mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence`
+- WSL evidence mirror: `/mnt/c/Projects/kamailio-rtpengine-sbc/evidence`
 
 ## Log Format
 
@@ -189,9 +189,9 @@ Objective:
 Commands:
 
 ```powershell
-wsl.exe -d Ubuntu -- bash -lc "sudo apt update | tee /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/01-apt-update.log"
-wsl.exe -d Ubuntu -- bash -lc "sudo apt install -y kamailio kamailio-extra-modules kamailio-utils-modules kamcli sip-tester sngrep tcpdump net-tools iproute2 ngrep python3 python3-pip netcat-openbsd procps | tee /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/02-apt-install-base.log"
-wsl.exe -d Ubuntu -- bash -lc "sudo apt install -y rtpengine-daemon | tee /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/03-apt-install-rtpengine-daemon.log"
+wsl.exe -d Ubuntu -- bash -lc "sudo apt update | tee /mnt/c/Projects/kamailio-rtpengine-sbc/evidence/01-apt-update.log"
+wsl.exe -d Ubuntu -- bash -lc "sudo apt install -y kamailio kamailio-extra-modules kamailio-utils-modules kamcli sip-tester sngrep tcpdump net-tools iproute2 ngrep python3 python3-pip netcat-openbsd procps | tee /mnt/c/Projects/kamailio-rtpengine-sbc/evidence/02-apt-install-base.log"
+wsl.exe -d Ubuntu -- bash -lc "sudo apt install -y rtpengine-daemon | tee /mnt/c/Projects/kamailio-rtpengine-sbc/evidence/03-apt-install-rtpengine-daemon.log"
 ```
 
 Key output:
@@ -282,7 +282,7 @@ Outputs created:
 Commands:
 
 ```powershell
-wsl.exe -d Ubuntu -- bash -lc "bash /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/lab/tools/sync_lab_to_wsl.sh"
+wsl.exe -d Ubuntu -- bash -lc "bash /mnt/c/Projects/kamailio-rtpengine-sbc/lab/tools/sync_lab_to_wsl.sh"
 wsl.exe -d Ubuntu -- bash -lc "~/sip-lab/tools/add-lab-ips.sh"
 wsl.exe -d Ubuntu -- bash -lc "sudo kamailio -c -f ~/sip-lab/kamailio/kamailio-lab.cfg"
 ```
@@ -290,7 +290,7 @@ wsl.exe -d Ubuntu -- bash -lc "sudo kamailio -c -f ~/sip-lab/kamailio/kamailio-l
 Key output:
 
 ```text
-Synced lab assets from /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/lab to /home/dev/sip-lab
+Synced lab assets from /mnt/c/Projects/kamailio-rtpengine-sbc/lab to /home/dev/sip-lab
 lo ... 10.10.10.10/32 10.10.10.20/32 10.10.10.41/32 10.10.10.42/32 10.10.10.99/32
 config file ok, exiting...
 Listening on udp: 10.10.10.10:5060
@@ -603,7 +603,7 @@ Commands:
 
 ```powershell
 wsl.exe -d Ubuntu -- bash -lc "sudo DEBIAN_FRONTEND=noninteractive apt update && sudo DEBIAN_FRONTEND=noninteractive apt install -y tshark"
-wsl.exe -d Ubuntu -- tshark -r /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/evidence/signaling/test01-pai/signaling.pcap -Y 'sip.Method == \"INVITE\" && ip.src==10.10.10.10' -V
+wsl.exe -d Ubuntu -- tshark -r /mnt/c/Projects/kamailio-rtpengine-sbc/evidence/signaling/test01-pai/signaling.pcap -Y 'sip.Method == \"INVITE\" && ip.src==10.10.10.10' -V
 ```
 
 Key output:
@@ -639,7 +639,7 @@ Objective:
 Commands:
 
 ```powershell
-wsl.exe -d Ubuntu -- bash -lc "bash /mnt/c/Users/DELL/Downloads/sip-lab-wsl2/lab/tools/sync_lab_to_wsl.sh && chmod +x ~/sip-lab/run/*.sh ~/sip-lab/tools/*.sh && ~/sip-lab/run/revalidate_with_tshark.sh"
+wsl.exe -d Ubuntu -- bash -lc "bash /mnt/c/Projects/kamailio-rtpengine-sbc/lab/tools/sync_lab_to_wsl.sh && chmod +x ~/sip-lab/run/*.sh ~/sip-lab/tools/*.sh && ~/sip-lab/run/revalidate_with_tshark.sh"
 ```
 
 Outputs created:

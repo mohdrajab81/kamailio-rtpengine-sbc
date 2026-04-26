@@ -1,2 +1,2 @@
 The following events occurred:
-2026-04-24	21:45:03.149514	1777056303.149514: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
+2026-04-26	18:10:29.990924	1777216229.990924: Failed to delete FD from epoll, errno = 1 (Operation not permitted)

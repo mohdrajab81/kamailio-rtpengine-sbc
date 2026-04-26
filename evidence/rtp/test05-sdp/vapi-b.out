@@ -1,8 +1,8 @@
 ------------------------------ Scenario Screen -------- [1-9]: Change Screen --
   Port   Total-time  Total-calls  Transport
-  5080       5.63 s            0  UDP
+  5080       5.62 s            0  UDP
 
-  0 new calls during 0.612 s period       1 ms scheduler resolution            
+  0 new calls during 0.608 s period       1 ms scheduler resolution            
   0 calls                                 Peak was 0 calls, after 0 s
   0 Running, 2 Paused, 18 Woken up
   0 dead call msg (discarded)           
@@ -18,13 +18,13 @@
 4 :  [   2000ms] Pause              0                             0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-24	21:45:06.034611	1777056306.034611         
-  Last Reset Time        | 2026-04-24	21:45:11.052814	1777056311.052814         
-  Current Time           | 2026-04-24	21:45:11.666899	1777056311.666899         
+  Start Time             | 2026-04-26	18:10:32.864596	1777216232.864596         
+  Last Reset Time        | 2026-04-26	18:10:37.881644	1777216237.881644         
+  Current Time           | 2026-04-26	18:10:38.493561	1777216238.493561         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------
-  Elapsed Time           | 00:00:00:614000           | 00:00:00:614000          
+  Elapsed Time           | 00:00:00:611000           | 00:00:00:611000          
   Call Rate              |    0.000 cps              |    0.000 cps             
 -------------------------+---------------------------+--------------------------
   Incoming calls created |        0                  |        0                 
