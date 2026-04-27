@@ -1,13 +1,13 @@
------------------------------------------------ 2026-04-26 18:10:09.781795
-UDP message received [502] bytes :
+----------------------------------------------- 2026-04-27 03:25:24.491073
+UDP message received [501] bytes :
 
 INVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
 Record-Route: <sip:10.10.10.10;lr;ftag=1>
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bKe074.f7b6e1e8913fdc46517e6814323f4a35.0
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK429.fda9073cf00e6a6a8d08759714b0e335.0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
 From: <sip:971509876543@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-192@10.10.10.20
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:carrier@10.10.10.20:5062>
 Max-Forwards: 69
@@ -16,39 +16,39 @@ X-Original-Caller: 971509876543
 X-Original_Caller: 971509876543
 
 
------------------------------------------------ 2026-04-26 18:10:09.781895
-UDP message sent (310 bytes):
+----------------------------------------------- 2026-04-27 03:25:24.491177
+UDP message sent (309 bytes):
 
 SIP/2.0 100 Trying
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bKe074.f7b6e1e8913fdc46517e6814323f4a35.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK429.fda9073cf00e6a6a8d08759714b0e335.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
 From: <sip:971509876543@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-ok-176
-Call-ID: 1-192@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-ok-182
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 INVITE
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:09.783059
-UDP message sent (349 bytes):
+----------------------------------------------- 2026-04-27 03:25:24.492430
+UDP message sent (348 bytes):
 
 SIP/2.0 180 Ringing
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bKe074.f7b6e1e8913fdc46517e6814323f4a35.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK429.fda9073cf00e6a6a8d08759714b0e335.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
 From: <sip:971509876543@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-ok-176
-Call-ID: 1-192@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-ok-182
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:vapi@10.10.10.41:5070>
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:09.784153
-UDP message sent (344 bytes):
+----------------------------------------------- 2026-04-27 03:25:24.493640
+UDP message sent (343 bytes):
 
 SIP/2.0 200 OK
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bKe074.f7b6e1e8913fdc46517e6814323f4a35.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK429.fda9073cf00e6a6a8d08759714b0e335.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
 From: <sip:971509876543@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-ok-176
-Call-ID: 1-192@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-ok-182
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:vapi@10.10.10.41:5070>
 Content-Length: 0

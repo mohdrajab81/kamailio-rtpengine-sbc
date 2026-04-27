@@ -1,7 +1,7 @@
-2026-04-26	18:10:04.479410	1777216204.479410: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
+2026-04-27	03:25:19.203786	1777249519.203786: Failed to delete FD from epoll, errno = 1 (Operation not permitted)
 ------------------------------ Scenario Screen -------- [1-9]: Change Screen --
   Port   Total-time  Total-calls  Transport
-  5070       3.59 s            1  UDP
+  5070       3.60 s            1  UDP
 
   Call limit 1 hit, 0.0 s period          0 ms scheduler resolution            
   0 calls                                 Peak was 1 calls, after 2 s
@@ -19,9 +19,9 @@
 4 :  [   1500ms] Pause              1                             0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-26	18:10:00.884380	1777216200.884380         
-  Last Reset Time        | 2026-04-26	18:10:04.479666	1777216204.479666         
-  Current Time           | 2026-04-26	18:10:04.479736	1777216204.479736         
+  Start Time             | 2026-04-27	03:25:15.602232	1777249515.602232         
+  Last Reset Time        | 2026-04-27	03:25:19.203885	1777249519.203885         
+  Current Time           | 2026-04-27	03:25:19.203905	1777249519.203905         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------

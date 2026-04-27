@@ -1,11 +1,11 @@
------------------------------------------------ 2026-04-26 18:10:16.293207
+----------------------------------------------- 2026-04-27 03:25:30.966445
 UDP message sent (342 bytes):
 
 INVITE sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-280-1-0
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-286-1-0
 From: <sip:0555123456@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-280@10.10.10.99
+Call-ID: 1-286@10.10.10.99
 CSeq: 1 INVITE
 Contact: <sip:carrier@10.10.10.99:5063>
 Max-Forwards: 70
@@ -13,14 +13,14 @@ P-Asserted-Identity: <sip:971501234567@etisalat.local>
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:16.293665
+----------------------------------------------- 2026-04-27 03:25:30.966831
 UDP message received [303] bytes :
 
 SIP/2.0 403 Forbidden
-Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-280-1-0
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-286-1-0
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.c810a678
-Call-ID: 1-280@10.10.10.99
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.41a348a9
+Call-ID: 1-286@10.10.10.99
 CSeq: 1 INVITE
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
@@ -30,23 +30,23 @@ Content-Length: 0
 Unexpected UDP message received:
 
 SIP/2.0 403 Forbidden
-Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-280-1-0
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-286-1-0
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.c810a678
-Call-ID: 1-280@10.10.10.99
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.41a348a9
+Call-ID: 1-286@10.10.10.99
 CSeq: 1 INVITE
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:16.293749
+----------------------------------------------- 2026-04-27 03:25:30.966912
 UDP message sent (364 bytes):
 
 ACK sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-280-1-0
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-286-1-0
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.c810a678
-Call-ID: 1-280@10.10.10.99
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.41a348a9
+Call-ID: 1-286@10.10.10.99
 CSeq: 1 ACK
 Contact: <sip:sipp@10.10.10.99:5063;transport=UDP>
 Max-Forwards: 70

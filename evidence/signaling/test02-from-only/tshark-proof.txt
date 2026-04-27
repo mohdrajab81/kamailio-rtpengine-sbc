@@ -1,15 +1,15 @@
-Frame 3: 544 bytes on wire (4352 bits), 544 bytes captured (4352 bits)
+Frame 3: 543 bytes on wire (4344 bits), 543 bytes captured (4344 bits)
     Encapsulation type: Ethernet (1)
-    Arrival Time: Apr 26, 2026 18:10:09.781748000 +03
-    UTC Arrival Time: Apr 26, 2026 15:10:09.781748000 UTC
-    Epoch Arrival Time: 1777216209.781748000
+    Arrival Time: Apr 27, 2026 03:25:24.490938000 +03
+    UTC Arrival Time: Apr 27, 2026 00:25:24.490938000 UTC
+    Epoch Arrival Time: 1777249524.490938000
     [Time shift for this packet: 0.000000000 seconds]
     [Time delta from previous captured frame: 0.000045000 seconds]
     [Time delta from previous displayed frame: 0.000000000 seconds]
-    [Time since reference or first frame: 0.000565000 seconds]
+    [Time since reference or first frame: 0.000514000 seconds]
     Frame Number: 3
-    Frame Length: 544 bytes (4352 bits)
-    Capture Length: 544 bytes (4352 bits)
+    Frame Length: 543 bytes (4344 bits)
+    Capture Length: 543 bytes (4344 bits)
     [Frame is marked: False]
     [Frame is ignored: False]
     [Protocols in frame: eth:ethertype:ip:udp:sip]
@@ -29,8 +29,8 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.41
     Differentiated Services Field: 0x10 (DSCP: Unknown, ECN: Not-ECT)
         0001 00.. = Differentiated Services Codepoint: Unknown (4)
         .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
-    Total Length: 530
-    Identification: 0x55c1 (21953)
+    Total Length: 529
+    Identification: 0xb89b (47259)
     000. .... = Flags: 0x0
         0... .... = Reserved bit: Not set
         .0.. .... = Don't fragment: Not set
@@ -38,21 +38,21 @@ Internet Protocol Version 4, Src: 10.10.10.10, Dst: 10.10.10.41
     ...0 0000 0000 0000 = Fragment Offset: 0
     Time to Live: 64
     Protocol: UDP (17)
-    Header Checksum: 0xfac3 [validation disabled]
+    Header Checksum: 0x97ea [validation disabled]
     [Header checksum status: Unverified]
     Source Address: 10.10.10.10
     Destination Address: 10.10.10.41
 User Datagram Protocol, Src Port: 5060, Dst Port: 5070
     Source Port: 5060
     Destination Port: 5070
-    Length: 510
-    Checksum: 0x2a56 [unverified]
+    Length: 509
+    Checksum: 0x2a55 [unverified]
     [Checksum Status: Unverified]
     [Stream index: 1]
     [Timestamps]
         [Time since first frame: 0.000000000 seconds]
         [Time since previous frame: 0.000000000 seconds]
-    UDP payload (502 bytes)
+    UDP payload (501 bytes)
 Session Initiation Protocol (INVITE)
     Request-Line: INVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
         Method: INVITE
@@ -68,15 +68,15 @@ Session Initiation Protocol (INVITE)
                 Record-Route Host Part: 10.10.10.10
                 Record-Route URI parameter: lr
                 Record-Route URI parameter: ftag=1
-        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bKe074.f7b6e1e8913fdc46517e6814323f4a35.0
+        Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK429.fda9073cf00e6a6a8d08759714b0e335.0
             Transport: UDP
             Sent-by Address: 10.10.10.10
-            Branch: z9hG4bKe074.f7b6e1e8913fdc46517e6814323f4a35.0
-        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+            Branch: z9hG4bK429.fda9073cf00e6a6a8d08759714b0e335.0
+        Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
             Transport: UDP
             Sent-by Address: 10.10.10.20
             Sent-by port: 5062
-            Branch: z9hG4bK-192-1-0
+            Branch: z9hG4bK-198-1-0
         From: <sip:971509876543@etisalat.local>;tag=1
             SIP from address: sip:971509876543@etisalat.local
                 SIP from address User Part: 971509876543
@@ -86,8 +86,8 @@ Session Initiation Protocol (INVITE)
             SIP to address: sip:800@lab.local
                 SIP to address User Part: 800
                 SIP to address Host Part: lab.local
-        Call-ID: 1-192@10.10.10.20
-        [Generated Call-ID: 1-192@10.10.10.20]
+        Call-ID: 1-198@10.10.10.20
+        [Generated Call-ID: 1-198@10.10.10.20]
         CSeq: 1 INVITE
             Sequence Number: 1
             Method: INVITE

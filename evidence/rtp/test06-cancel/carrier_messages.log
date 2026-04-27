@@ -1,11 +1,11 @@
------------------------------------------------ 2026-04-26 18:10:42.033277
+----------------------------------------------- 2026-04-27 03:25:56.730457
 UDP message sent (523 bytes):
 
 INVITE sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:0555123456@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-842@10.10.10.20
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:carrier@10.10.10.20:5062>
 Max-Forwards: 70
@@ -21,77 +21,77 @@ t=0 0
 m=audio 5064 RTP/AVP 0
 a=rtpmap:0 PCMU/8000
 
------------------------------------------------ 2026-04-26 18:10:42.035004
+----------------------------------------------- 2026-04-27 03:25:56.731627
 UDP message received [291] bytes :
 
 SIP/2.0 100 trying -- your call is important to us
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:0555123456@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-842@10.10.10.20
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 INVITE
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.036481
+----------------------------------------------- 2026-04-27 03:25:56.733718
 UDP message received [277] bytes :
 
 SIP/2.0 180 Ringing
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-cancel-733
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-cancel-739
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:vapi@10.10.10.41:5070>
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.036512
+----------------------------------------------- 2026-04-27 03:25:56.733784
 UDP message sent (250 bytes):
 
 CANCEL sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:0555123456@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-842@10.10.10.20
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 CANCEL
 Max-Forwards: 70
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.036964
+----------------------------------------------- 2026-04-27 03:25:56.734098
 UDP message received [308] bytes :
 
 SIP/2.0 200 canceling
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=f221321e2d822ffc02d8727b0bd0a266-0c1aaf1d
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=f221321e2d822ffc02d8727b0bd0a266-ab2d8c7f
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 CANCEL
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.038298
+----------------------------------------------- 2026-04-27 03:25:56.735390
 UDP message received [187] bytes :
 
 SIP/2.0 487 Request Terminated
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-cancel-733
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-cancel-739
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 INVITE
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.038326
+----------------------------------------------- 2026-04-27 03:25:56.735413
 UDP message sent (264 bytes):
 
 ACK sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-cancel-733
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-cancel-739
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 ACK
 Max-Forwards: 70
 Content-Length: 0

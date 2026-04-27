@@ -1,38 +1,38 @@
 ------------------------------ Scenario Screen -------- [1-9]: Change Screen --
   Port   Total-time  Total-calls  Transport
-  5080       6.02 s            6  UDP
+  5080       6.01 s            7  UDP
 
-  0 new calls during 1.000 s period       1 ms scheduler resolution            
-  0 calls                                 Peak was 6 calls, after 2 s
-  0 Running, 8 Paused, 25 Woken up
+  0 new calls during 0.992 s period       1 ms scheduler resolution            
+  0 calls                                 Peak was 7 calls, after 2 s
+  0 Running, 9 Paused, 26 Woken up
   0 dead call msg (discarded)           
   3 open sockets                          0/0/0 UDP errors (send/recv/cong)
   0 Total RTP pckts sent                  0.000 last period RTP rate (kB/s)
 
                                  Messages  Retrans   Timeout   Unexpected-Msg
-0 :  ----------> INVITE             6         0         0         0            
+0 :  ----------> INVITE             7         0         0         0            
 
-1 :  <---------- 100                6         0                                
-2 :  <---------- 180                6         0                                
-3 :  <---------- 200                6         0                                
-4 :  [   1500ms] Pause              6                             0        
+1 :  <---------- 100                7         0                                
+2 :  <---------- 180                7         0                                
+3 :  <---------- 200                7         0                                
+4 :  [   1500ms] Pause              7                             0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-26	18:10:18.704928	1777216218.704928         
-  Last Reset Time        | 2026-04-26	18:10:23.725832	1777216223.725832         
-  Current Time           | 2026-04-26	18:10:24.726561	1777216224.726561         
+  Start Time             | 2026-04-27	03:25:33.392009	1777249533.392009         
+  Last Reset Time        | 2026-04-27	03:25:38.410582	1777249538.410582         
+  Current Time           | 2026-04-27	03:25:39.405052	1777249539.405052         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------
-  Elapsed Time           | 00:00:01:000000           | 00:00:01:000000          
-  Call Rate              |    0.000 cps              |    0.997 cps             
+  Elapsed Time           | 00:00:00:994000           | 00:00:00:994000          
+  Call Rate              |    0.000 cps              |    1.164 cps             
 -------------------------+---------------------------+--------------------------
-  Incoming calls created |        0                  |        6                 
+  Incoming calls created |        0                  |        7                 
   Outgoing calls created |        0                  |        0                 
-  Total Calls created    |                           |        6                 
+  Total Calls created    |                           |        7                 
   Current Calls          |        0                  |                          
 -------------------------+---------------------------+--------------------------
-  Successful call        |        0                  |        6                 
+  Successful call        |        0                  |        7                 
   Failed call            |        0                  |        0                 
 -------------------------+---------------------------+--------------------------
   Call Length            | 00:00:00:000000           | 00:00:00:000000          

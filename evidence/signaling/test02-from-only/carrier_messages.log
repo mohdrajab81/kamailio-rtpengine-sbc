@@ -1,64 +1,64 @@
------------------------------------------------ 2026-04-26 18:10:09.781203
+----------------------------------------------- 2026-04-27 03:25:24.490439
 UDP message sent (288 bytes):
 
 INVITE sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
 From: <sip:971509876543@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-192@10.10.10.20
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:carrier@10.10.10.20:5062>
 Max-Forwards: 70
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:09.781729
+----------------------------------------------- 2026-04-27 03:25:24.490914
 UDP message received [288] bytes :
 
 SIP/2.0 100 trying -- your call is important to us
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
 From: <sip:971509876543@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-192@10.10.10.20
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 INVITE
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:09.783231
+----------------------------------------------- 2026-04-27 03:25:24.492605
 UDP message received [270] bytes :
 
 SIP/2.0 180 Ringing
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
 From: <sip:971509876543@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-ok-176
-Call-ID: 1-192@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-ok-182
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:vapi@10.10.10.41:5070>
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:09.784318
+----------------------------------------------- 2026-04-27 03:25:24.493741
 UDP message received [265] bytes :
 
 SIP/2.0 200 OK
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-0
 From: <sip:971509876543@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-ok-176
-Call-ID: 1-192@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-ok-182
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:vapi@10.10.10.41:5070>
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:09.784344
+----------------------------------------------- 2026-04-27 03:25:24.493765
 UDP message sent (298 bytes):
 
 ACK sip:800@lab.local SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-192-1-4
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-198-1-4
 From: <sip:971509876543@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-ok-176
-Call-ID: 1-192@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-ok-182
+Call-ID: 1-198@10.10.10.20
 CSeq: 1 ACK
 Contact: <sip:carrier@10.10.10.20:5062>
 Max-Forwards: 70

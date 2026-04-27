@@ -1,9 +1,9 @@
 Resolving remote host '10.10.10.10'... Done.
-2026-04-26	18:10:16.293684	1777216216.293684: Aborting call on unexpected message for Call-Id '1-280@10.10.10.99': while expecting '100' (index 1), received 'SIP/2.0 403 Forbidden
-Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-280-1-0
+2026-04-27	03:25:30.966851	1777249530.966851: Aborting call on unexpected message for Call-Id '1-286@10.10.10.99': while expecting '100' (index 1), received 'SIP/2.0 403 Forbidden
+Via: SIP/2.0/UDP 10.10.10.99:5063;branch=z9hG4bK-286-1-0
 From: <sip:0555123456@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.c810a678
-Call-ID: 1-280@10.10.10.99
+To: <sip:800@lab.local>;tag=d2fa0af6ca733c2a1006bcac4cbc100b.41a348a9
+Call-ID: 1-286@10.10.10.99
 CSeq: 1 INVITE
 Server: kamailio (5.7.4 (x86_64/linux))
 Content-Length: 0
@@ -29,14 +29,14 @@ Content-Length: 0
 5 :       Pause [   1000ms]         0                             0        
 ------------------------------ Test Terminated --------------------------------
 ----------------------------- Statistics Screen ------- [1-9]: Change Screen --
-  Start Time             | 2026-04-26	18:10:16.190855	1777216216.190855         
-  Last Reset Time        | 2026-04-26	18:10:16.293780	1777216216.293780         
-  Current Time           | 2026-04-26	18:10:16.293809	1777216216.293809         
+  Start Time             | 2026-04-27	03:25:30.866264	1777249530.866264         
+  Last Reset Time        | 2026-04-27	03:25:30.966941	1777249530.966941         
+  Current Time           | 2026-04-27	03:25:30.966958	1777249530.966958         
 -------------------------+---------------------------+--------------------------
   Counter Name           | Periodic value            | Cumulative value
 -------------------------+---------------------------+--------------------------
   Elapsed Time           | 00:00:00:000000           | 00:00:00:000000          
-  Call Rate              |    0.000 cps              |    9.804 cps             
+  Call Rate              |    0.000 cps              |   10.000 cps             
 -------------------------+---------------------------+--------------------------
   Incoming calls created |        0                  |        0                 
   Outgoing calls created |        0                  |        1                 

@@ -1,13 +1,13 @@
------------------------------------------------ 2026-04-26 18:10:42.035123
+----------------------------------------------- 2026-04-27 03:25:56.731918
 UDP message received [778] bytes :
 
 INVITE sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
-Record-Route: <sip:10.10.10.10;lr;ftag=1;did=cee.2e1>
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK32f4.1922dc548b3e63ca5d80b7e93ee6cb39.0
-Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Record-Route: <sip:10.10.10.10;lr;ftag=1;did=201.677>
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK9311.a955e7de5c3459784099a39bfcd32321.0
+Via: SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:971501234567@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-842@10.10.10.20
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:carrier@10.10.10.20:5062>
 Max-Forwards: 69
@@ -22,81 +22,81 @@ o=carrier 1 1 IN IP4 10.10.10.10
 s=Fake Carrier SDP Cancel
 c=IN IP4 10.10.10.10
 t=0 0
-m=audio 40042 RTP/AVP 0
+m=audio 40068 RTP/AVP 0
 a=rtpmap:0 PCMU/8000
 a=sendrecv
-a=rtcp:40043
+a=rtcp:40069
 
------------------------------------------------ 2026-04-26 18:10:42.035247
+----------------------------------------------- 2026-04-27 03:25:56.732325
 UDP message sent (319 bytes):
 
 SIP/2.0 100 Trying
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK32f4.1922dc548b3e63ca5d80b7e93ee6cb39.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK9311.a955e7de5c3459784099a39bfcd32321.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:971501234567@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-cancel-733
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-cancel-739
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 INVITE
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.036362
+----------------------------------------------- 2026-04-27 03:25:56.733597
 UDP message sent (358 bytes):
 
 SIP/2.0 180 Ringing
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK32f4.1922dc548b3e63ca5d80b7e93ee6cb39.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-842-1
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK9311.a955e7de5c3459784099a39bfcd32321.0, SIP/2.0/UDP 10.10.10.20:5062;branch=z9hG4bK-cancel-848-1
 From: <sip:971501234567@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-cancel-733
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-cancel-739
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 INVITE
 Contact: <sip:vapi@10.10.10.41:5070>
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.036966
+----------------------------------------------- 2026-04-27 03:25:56.734101
 UDP message received [294] bytes :
 
 CANCEL sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK32f4.1922dc548b3e63ca5d80b7e93ee6cb39.0
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK9311.a955e7de5c3459784099a39bfcd32321.0
 From: <sip:971501234567@etisalat.local>;tag=1
 To: <sip:800@lab.local>
-Call-ID: 1-842@10.10.10.20
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 CANCEL
 Max-Forwards: 69
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.037014
+----------------------------------------------- 2026-04-27 03:25:56.734131
 UDP message sent (257 bytes):
 
 SIP/2.0 200 OK
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK32f4.1922dc548b3e63ca5d80b7e93ee6cb39.0
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK9311.a955e7de5c3459784099a39bfcd32321.0
 From: <sip:971501234567@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-cancel-733
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-cancel-739
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 CANCEL
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.038143
+----------------------------------------------- 2026-04-27 03:25:56.735245
 UDP message sent (273 bytes):
 
 SIP/2.0 487 Request Terminated
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK32f4.1922dc548b3e63ca5d80b7e93ee6cb39.0
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK9311.a955e7de5c3459784099a39bfcd32321.0
 From: <sip:971501234567@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-cancel-733
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-cancel-739
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 INVITE
 Content-Length: 0
 
 
------------------------------------------------ 2026-04-26 18:10:42.038229
+----------------------------------------------- 2026-04-27 03:25:56.735345
 UDP message received [308] bytes :
 
 ACK sip:+97145550123@localcred.sip.vapi.ai SIP/2.0
-Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK32f4.1922dc548b3e63ca5d80b7e93ee6cb39.0
+Via: SIP/2.0/UDP 10.10.10.10;branch=z9hG4bK9311.a955e7de5c3459784099a39bfcd32321.0
 From: <sip:971501234567@etisalat.local>;tag=1
-To: <sip:800@lab.local>;tag=vapi-cancel-733
-Call-ID: 1-842@10.10.10.20
+To: <sip:800@lab.local>;tag=vapi-cancel-739
+Call-ID: 1-848@10.10.10.20
 CSeq: 1 ACK
 Max-Forwards: 69
 Content-Length: 0
